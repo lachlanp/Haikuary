@@ -20,5 +20,23 @@
   @include border-radius(5px);
   display:block;
   margin:10px auto;
-  width:80%;
+  width:40%;
+  text-align: center;
+}
+
+.form_page {
+  width:60%;
+  margin:0 auto;
+  textarea {
+    width:100%;
+  }
+  label {
+    font-size:1.5em;
+    text-align: center;
+    line-height:40px;
+  }
+  .center {
+    margin:0 auto;
+    display:block;
+  }
 }
