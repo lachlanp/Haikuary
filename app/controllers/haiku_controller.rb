@@ -1,8 +1,8 @@
 class HaikuController < ApplicationController
-  before_filter :lets_init_haiku, except: [ :index, :new ]
+  before_filter :lets_init_haiku, only: [ :show ]
 
   def index
-    @list_many_haiku = Haiku.all
+    @list_many_haiku = Haiku.page(params[:page]).per_page(20)
   end
 
   def show
@@ -23,7 +23,10 @@ class HaikuController < ApplicationController
         format.html {redirect_to root_path, notice: "Nice Haiku right there/ I can't believe it's butter/ I mean really, what?"}
         format.json {render json: @haiku}
       else
-
+        format.html { render :new, notice: 'God,what have you done/ You broke me into pieces/ You monster, run fast.'}
+        format.json { render json: @haiku }
+      end
+    end
   end
 
   private

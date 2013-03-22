@@ -2,3 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
+@import "compass";
+
+* {
+  box-sizing:border-box;
+}
+.haiku-right {
+  position:absolute;
+  top:5px;
+  right:10px;
+}
+
+.pretty_haiku {
+  background:lightgrey;
+  border:thin grey solid;
+  padding:10px;
+  @include border-radius(5px);
+  display:block;
+  margin:10px auto;
+  width:80%;
+}
