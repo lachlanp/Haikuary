@@ -2,7 +2,7 @@ class HaikuController < ApplicationController
   before_filter :lets_init_haiku, only: [ :show ]
 
   def index
-    @list_many_haiku = Haiku.page(params[:page]).per_page(20)
+    @list_many_haiku = Haiku.order('id DESC').page(params[:page]).per_page(20)
   end
 
   def show
