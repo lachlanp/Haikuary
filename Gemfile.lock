@@ -1,5 +1,5 @@
 GEM
-  remote: http://rubygems.rc/
+  remote: https://rubygems.org/
   specs:
     actionmailer (3.2.13)
       actionpack (= 3.2.13)
@@ -95,7 +95,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.21)
     modernizr-rails (2.6.2)
-    multi_json (1.7.1)
+    multi_json (1.7.2)
     nokogiri (1.5.9)
     pg (0.14.1)
     polyglot (0.3.3)
@@ -186,7 +186,7 @@ DEPENDENCIES
   modernizr-rails
   pg
   quiet_assets
-  rails (= 3.2.13)
+  rails
   rspec-rails (>= 2.11.0)
   sass-rails (~> 3.2.3)
   simple_form
