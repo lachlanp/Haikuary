@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.rc/
   specs:
     actionmailer (3.2.13)
       actionpack (= 3.2.13)
@@ -186,7 +186,7 @@ DEPENDENCIES
   modernizr-rails
   pg
   quiet_assets
-  rails
+  rails (= 3.2.13)
   rspec-rails (>= 2.11.0)
   sass-rails (~> 3.2.3)
   simple_form
