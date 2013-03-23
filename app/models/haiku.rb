@@ -6,4 +6,5 @@ class Haiku < ActiveRecord::Base
   def create_audio_file
     `say "#{self.description}" -o #{Rails.root + 'public/haiku_audio' + self.id.to_s }.aiff`
   end
+
 end
