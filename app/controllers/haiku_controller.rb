@@ -22,10 +22,13 @@ class HaikuController < ApplicationController
     @haiku = Haiku.new(params[:haiku])
     respond_to do |format|
       if @haiku.save
-        format.html {redirect_to root_path, notice: "Nice Haiku right there/ I can't believe it's butter/ I mean really, what?"}
+        format.html {redirect_to root_path, notice: Haiku.all.sample.description}
         format.json {render json: @haiku}
       else
-        format.html { render :new, notice: 'God,what have you done/ You broke me into pieces/ You monster, run fast.'}
+        format.html do
+          flash.now[:error] = Haiku.all.sample.description
+          render :new
+        end
         format.json { render json: @haiku }
       end
     end
