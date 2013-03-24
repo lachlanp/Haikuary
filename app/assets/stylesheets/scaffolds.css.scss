@@ -97,7 +97,7 @@ embed {
   margin:0 auto;
 }
 body {
-  background:url("black_@2X.png") repeat;
+  background:url("black_@2X.png") repeat fixed;
 }
 .navbar-top, .navbar-inner {
   background:url("low_contrast_linen_@2X.png") repeat;
@@ -122,6 +122,7 @@ body {
   position:absolute;
   top:5px;
   left:10px;
+  width:30%;
 }
 label {
   color:white;
@@ -130,4 +131,5 @@ audio {
   width:100%;
   min-width:40px;
   max-width:300px;
+
 }
