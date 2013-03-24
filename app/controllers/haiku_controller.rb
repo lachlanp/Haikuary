@@ -19,7 +19,7 @@ class HaikuController < ApplicationController
   end
 
   def create
-    @haiku = Haiku.new(params[:haiku])
+    @haiku = Haiku.new(haiku_params)
     respond_to do |format|
       if @haiku.save
         format.html {redirect_to root_path, notice: Haiku.all.sample.description}
@@ -38,5 +38,9 @@ class HaikuController < ApplicationController
 
   def lets_init_haiku
     @haiku = Haiku.find(:id)
+  end
+
+  def haiku_params
+    params.require(:haiku).permit(:description, :author)
   end
 end

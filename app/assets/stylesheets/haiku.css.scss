@@ -1,7 +1,6 @@
 // Place all the styles related to the Haiku controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import "compass";
 
 .haiku-right {
   position:absolute;
@@ -13,7 +12,7 @@
   background:lightgrey;
   border:thin grey solid;
   padding:10px;
-  @include border-radius(5px);
+  border-radius:5px;
   display:block;
   margin:10px auto;
   width:40%;

@@ -1,6 +1,6 @@
-source 'http://rubygems.rc'
+source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', "4.0.0.beta1"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -11,8 +11,8 @@ gem 'pg'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails', ">= 4.0.0.beta1"
+  gem 'coffee-rails', ">= 4.0.0.beta1"
   gem 'bootstrap-sass'
   gem 'bootswatch-rails'
   gem 'compass-rails'
@@ -28,7 +28,6 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem "will_paginate"
 gem "simple_form"
-gem "rack-cors", :require => 'rack/cors'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 group :development do

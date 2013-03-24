@@ -1,5 +1,4 @@
 @import "bootstrap";
-@import "compass";
 
 * {
   box-sizing:border-box;
@@ -24,7 +23,7 @@
   width:40%;
   border:thin grey solid;
   padding:10px;
-  @include border-radius(5px);
+  border-radius:5px;
 }
 
 .profile-block-haiku {
@@ -34,5 +33,5 @@
   width:200px;
   border:thin grey solid;
   padding:10px;
-  @include border-radius(5px);
+  border-radius:5px;
 }
