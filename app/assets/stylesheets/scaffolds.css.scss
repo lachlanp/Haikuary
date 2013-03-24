@@ -30,6 +30,7 @@
   border:thin grey solid;
   padding:10px;
   @include border-radius(5px);
+  background:url("grey_@2X.png") repeat;
 }
 
 .profile-block-haiku {
@@ -50,7 +51,7 @@
 }
 
 .pretty_haiku {
-  background:lightgrey;
+  background:url("grey_@2X.png") repeat;
   border:thin grey solid;
   padding:10px;
   @include border-radius(5px);
@@ -58,6 +59,7 @@
   margin:10px auto;
   width:40%;
   text-align: center;
+  box-shadow: 1px 1px 1px;
 }
 
 .form_page {
@@ -89,4 +91,38 @@ embed {
   display:block;
   margin:0 auto;
 }
+body {
+  background:url("black_@2X.png") repeat;
+}
+.navbar-top, .navbar-inner {
+  background:url("low_contrast_linen_@2X.png") repeat;
+  border:none;
+  @include border-radius(0);
+}
+.navbar-top {
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  clear:both;
+  z-index:1000;
+}
 
+.content {
+  position:relative;
+  top:40px;
+}
+
+.rainy {
+  position:absolute;
+  top:5px;
+  left:10px;
+}
+label {
+  color:white;
+}
+audio {
+  width:100%;
+  min-width:40px;
+  max-width:300px;
+}

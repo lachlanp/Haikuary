@@ -1,9 +1,9 @@
 .pretty_haiku
   .haiku=simple_format single_haiku.description
   .author  -  #{single_haiku.author}
-  //%embed{ 'data-src' => "#{@github_location}#{single_haiku.id}.aiff", 'data-id' => "#{single_haiku.id}", autostart: "false", onError: "local_replace", id: "multiple_choice_#{single_haiku.id}" }
   -if single_haiku.file_path.present?
-    %embed{ src: single_haiku.file_path, autostart: "false"}
+    %audio{ controls: "controls"}
+      %source{ src: "/#{single_haiku.file_path}" }
   -else
     .profile-block-haiku
       %p Alex can't read me,

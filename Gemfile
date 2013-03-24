@@ -15,7 +15,7 @@ group :assets do
   gem 'coffee-rails', ">= 4.0.0.beta1"
   gem 'bootstrap-sass'
   gem 'bootswatch-rails'
-  gem 'compass-rails'
+  # gem 'compass-rails'
   gem 'modernizr-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
