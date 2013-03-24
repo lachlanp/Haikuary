@@ -4,6 +4,12 @@
   box-sizing:border-box;
 }
 
+@mixin border-radius($size) {
+  -moz-border-radius: $size;
+  -webkit-border-radius: $size;
+  border-radius: $size;
+}
+
 .page_title {
   display:block;
   text-align: center;
@@ -23,7 +29,7 @@
   width:40%;
   border:thin grey solid;
   padding:10px;
-  border-radius:5px;
+  @include border-radius(5px);
 }
 
 .profile-block-haiku {
@@ -33,5 +39,54 @@
   width:200px;
   border:thin grey solid;
   padding:10px;
-  border-radius:5px;
+  @include border-radius(5px);
 }
+
+
+.haiku-right {
+  position:absolute;
+  top:5px;
+  right:10px;
+}
+
+.pretty_haiku {
+  background:lightgrey;
+  border:thin grey solid;
+  padding:10px;
+  @include border-radius(5px);
+  display:block;
+  margin:10px auto;
+  width:40%;
+  text-align: center;
+}
+
+.form_page {
+  width:60%;
+  margin:0 auto;
+  textarea {
+    width:100%;
+  }
+  label {
+    font-size:1.5em;
+    text-align: center;
+    line-height:40px;
+  }
+  .center {
+    margin:0 auto;
+    display:block;
+  }
+  #haiku_author {
+    margin:20px auto;
+    display:block;
+  }
+}
+.author {
+  font-style: italic;
+  font-size:.8em;
+}
+
+embed {
+  display:block;
+  margin:0 auto;
+}
+
