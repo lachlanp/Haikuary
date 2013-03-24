@@ -1,4 +1,5 @@
 .pretty_haiku
   .haiku=simple_format single_haiku.description
   .author  -  #{single_haiku.author}
-  %embed{ 'data-src' => "#{@github_location}#{single_haiku.id}.aiff", 'data-id' => "#{single_haiku.id}", autostart: "false", onError: "local_replace", id: "multiple_choice_#{single_haiku.id}" }
+  //%embed{ 'data-src' => "#{@github_location}#{single_haiku.id}.aiff", 'data-id' => "#{single_haiku.id}", autostart: "false", onError: "local_replace", id: "multiple_choice_#{single_haiku.id}" }
+  %embed{ src:"/haiku_audio/#{single_haiku.id}.aiff", autostart: "false"}
