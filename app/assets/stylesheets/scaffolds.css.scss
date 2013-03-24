@@ -1,7 +1,38 @@
+@import "bootstrap";
+@import "compass";
+
+* {
+  box-sizing:border-box;
+}
+
 .page_title {
   display:block;
   text-align: center;
   font-size: 2em;
   font-weight:500;
   line-height: 40px;
+}
+
+.center {
+  text-align: center;
+}
+
+.profile-block {
+  display:block;
+  margin:0 auto;
+  text-align: center;
+  width:40%;
+  border:thin grey solid;
+  padding:10px;
+  @include border-radius(5px);
+}
+
+.profile-block-haiku {
+  display:block;
+  margin:0 auto;
+  text-align: center;
+  width:200px;
+  border:thin grey solid;
+  padding:10px;
+  @include border-radius(5px);
 }

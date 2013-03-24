@@ -4,7 +4,12 @@ class Haiku < ActiveRecord::Base
   after_save :create_audio_file
 
   def create_audio_file
-    `say "#{self.description}" -o #{Rails.root + 'public/haiku_audio' + self.id.to_s }.aiff`
+    possible_path = "haiku_audio/#{self.id}.aiff"
+    local_path = Rails.root + 'public/' + possible_path
+    `say "#{self.description}" -o #{local_path}`
+    if File.size(local_path) > 10000
+      self.update_column(:file_path, possible_path)
+    end
   end
 
   private

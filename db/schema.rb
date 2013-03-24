@@ -11,13 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130323002656) do
+ActiveRecord::Schema.define(:version => 20130324112325) do
 
   create_table "haiku", :force => true do |t|
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "description"
     t.string   "author",      :default => "Anonymously"
+    t.string   "file_path"
   end
 
 end

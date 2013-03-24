@@ -1,12 +1,8 @@
 // Place all the styles related to the Haiku controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import "bootstrap";
 @import "compass";
 
-* {
-  box-sizing:border-box;
-}
 .haiku-right {
   position:absolute;
   top:5px;
@@ -51,4 +47,5 @@
 
 embed {
   display:block;
+  margin:0 auto;
 }
