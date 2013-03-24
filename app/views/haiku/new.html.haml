@@ -1,6 +1,6 @@
 .form_page
   =simple_form_for @haiku do |f|
-    =f.input :description, as: :text, label: "Give me a haiku.", placeholder: "I keep your format, use spacebar for new lines please, it will look pretty", input_html: {rows: 3}
+    =f.input :description, as: :text, label: "Give me a haiku.", placeholder: "I keep your format, use enter for new lines please, it will look pretty", input_html: {rows: 3}
     =f.input :author, label: "Who do the haiku?"
     =f.submit "Submit a haiku for fun", class: "btn btn-primary center"
 
