@@ -6,7 +6,7 @@ gem 'rails', "4.0.0.beta1"
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-
+gem 'yaml_db', github: 'jetthoughts/yaml_db', branch: 'rails4'
 
 # Gems used only for assets and not required
 # in production environments by default.

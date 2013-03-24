@@ -1,0 +1,732 @@
+
+---
+haiku:
+  columns:
+  - id
+  - created_at
+  - updated_at
+  - description
+  - author
+  - file_path
+  records: 
+  - - '1'
+    - '2013-03-22 22:47:36.953059'
+    - '2013-03-24 15:56:59.786275'
+    - "This is a haiku,\r\nIt makes me smile so broadly,\r\nWhy won't you work now?"
+    - Anonymously
+    - haiku_audio/1.mp4
+  - - '3'
+    - '2013-03-22 22:57:52.960244'
+    - '2013-03-24 15:56:59.931799'
+    - "forlorn ex-apple\r\nlonely core in coffee cup\r\nas autumn sun shines"
+    - Anonymously
+    - haiku_audio/3.mp4
+  - - '4'
+    - '2013-03-22 23:00:37.575519'
+    - '2013-03-24 15:57:00.072249'
+    - "I love jesus man\r\nwow he makes me work so hard\r\n\r\nrefrigerator"
+    - Anonymously
+    - haiku_audio/4.mp4
+  - - '5'
+    - '2013-03-22 23:02:05.785463'
+    - '2013-03-24 15:57:00.214802'
+    - "when will lunch time be?\r\ni crave tasty sustenance\r\nand beer in the sun"
+    - Anonymously
+    - haiku_audio/5.mp4
+  - - '6'
+    - '2013-03-22 23:15:03.617203'
+    - '2013-03-24 15:57:00.398486'
+    - "haiku time is now\r\nand will be forever more\r\nonly death will end"
+    - Anonymously
+    - haiku_audio/6.mp4
+  - - '7'
+    - '2013-03-22 23:22:52.714506'
+    - '2013-03-24 15:57:00.53502'
+    - "today's cat-watch count:\r\nzero, little hope for change\r\nねこ好きね"
+    - Anonymously
+    - haiku_audio/7.mp4
+  - - '8'
+    - '2013-03-22 23:25:55.191112'
+    - '2013-03-24 16:15:33.042913'
+    - "いまとここ\r\nレールズキャンプで\r\nねこがない"
+    - Anonymously
+    - 
+  - - '9'
+    - '2013-03-22 23:29:55.423933'
+    - '2013-03-24 15:57:00.663146'
+    - "should haiku index\r\nshowcase new leaves at the top\r\nlike noble oak trees"
+    - Anonymously
+    - haiku_audio/9.mp4
+  - - '10'
+    - '2013-03-23 00:01:16.888226'
+    - '2013-03-24 15:57:00.803813'
+    - "        I have eaten lunch\r\nDo you know what I had to eat?\r\n      A wrap
+      with some fruit"
+    - Anonymously
+    - haiku_audio/10.mp4
+  - - '11'
+    - '2013-03-23 00:13:56.737121'
+    - '2013-03-24 15:57:01.05658'
+    - "you and I, alike:\r\nconsumed lunch wrap; differing:\r\nI've had no fruit yet"
+    - Anonymously
+    - haiku_audio/11.mp4
+  - - '12'
+    - '2013-03-23 00:33:35.764282'
+    - '2013-03-24 15:57:01.193626'
+    - "I do the haiku, \r\nor does the haiku do me?\r\nLet's do the haiku."
+    - Anonymously
+    - haiku_audio/12.mp4
+  - - '13'
+    - '2013-03-23 00:41:39.755583'
+    - '2013-03-24 15:57:01.344316'
+    - Need questions? The haiku may ask. You shall inquest now.
+    - Charles
+    - haiku_audio/13.mp4
+  - - '14'
+    - '2013-03-23 01:15:14.238955'
+    - '2013-03-24 15:57:01.491164'
+    - "Matt's computer plays\r\nthe trollyest pop clubby - pop\r\nreach for the lasers"
+    - Rrrrooooobbbbb
+    - haiku_audio/14.mp4
+  - - '15'
+    - '2013-03-23 01:18:41.603829'
+    - '2013-03-24 15:56:59.631222'
+    - "Enormous cursor\r\nDemonstrates great vector use\r\nScalable image"
+    - Anonymously
+    - haiku_audio/15.mp4
+  - - '16'
+    - '2013-03-23 01:20:25.746006'
+    - '2013-03-24 15:57:01.66127'
+    - "You, me, and Lana:\r\nThis evening, let's engage in\r\nDrunk karaoke."
+    - merrin
+    - haiku_audio/16.mp4
+  - - '18'
+    - '2013-03-23 04:20:36.687312'
+    - '2013-03-24 15:57:01.816947'
+    - "Goodbye W\r\nMy gosh, we will miss you so\r\nInternal error"
+    - Lachlan
+    - haiku_audio/18.mp4
+  - - '19'
+    - '2013-03-23 04:35:50.439084'
+    - '2013-03-24 15:57:01.952677'
+    - "outside, afternoon:\r\ndecagonal frisbee time.\r\nbromance abounded"
+    - merrin
+    - haiku_audio/19.mp4
+  - - '20'
+    - '2013-03-23 08:07:19.123852'
+    - '2013-03-24 15:57:02.126673'
+    - "Killed by my close friends;\r\nThey laughed as I was strung up,\r\nShort lives
+      are so sad."
+    - Not a Wolf
+    - haiku_audio/20.mp4
+  - - '22'
+    - '2013-03-24 10:37:55.255815'
+    - '2013-03-24 15:57:02.261069'
+    - "This isn't a test,\r\nThis is actually life.\r\nGet used to it fast."
+    - Lachypoo
+    - haiku_audio/22.mp4
+  - - '23'
+    - '2013-03-24 10:43:32.255198'
+    - '2013-03-24 15:57:02.399329'
+    - "At Railscamp, drunk.\r\nCider, beer, whiskey and wine.\r\nVomit, vomit, ugh.\r\n"
+    - Drunkard
+    - haiku_audio/23.mp4
+  - - '24'
+    - '2013-03-24 10:46:01.717003'
+    - '2013-03-24 15:56:59.46919'
+    - "My friends betray me.\r\nOnce great friends, now I see clear.\r\nWerewolves,
+      all of them.\r\n\r\n"
+    - Ryan
+    - haiku_audio/24.mp4
+  - - '25'
+    - '2013-03-24 10:50:41.473807'
+    - '2013-03-24 15:57:02.550268'
+    - "They didn't want me,\r\n\r\nso I made my own haiku;\r\n\r\nwith blackjack,
+      hookers."
+    - Anonymously
+    - haiku_audio/25.mp4
+  - - '27'
+    - '2013-03-24 10:53:03.542998'
+    - '2013-03-24 15:57:02.711532'
+    - "bright lights, loud noises:\r\nunappealing this morning.\r\nspirited evening."
+    - merrin
+    - haiku_audio/27.mp4
+  - - '28'
+    - '2013-03-24 11:16:52.28829'
+    - '2013-03-24 15:57:02.858617'
+    - "coffee machine blues;\r\none group handle, tiny cups.\r\nexcess of steamed
+      milk."
+    - latté
+    - haiku_audio/28.mp4
+  - - '30'
+    - '2013-03-24 11:23:27.040342'
+    - '2013-03-24 15:57:02.994303'
+    - "lachlan's pain right now:\r\nstyling ephemeral things.\r\nlife, CSS, hurt."
+    - a ghost
+    - haiku_audio/30.mp4
+  - - '31'
+    - '2013-03-24 11:28:10.598173'
+    - '2013-03-24 15:57:03.167268'
+    - "the sun shines brightly:\r\nanthropogenic weather.\r\nour demise is near."
+    - despair
+    - haiku_audio/31.mp4
+  - - '32'
+    - '2013-03-24 12:39:09.278293'
+    - '2013-03-24 15:57:03.336198'
+    - "Why are you so mean?\r\n\r\nRegular expressions suck,\r\n\r\nThey break all
+      the things."
+    - Lachypoo
+    - haiku_audio/32.mp4
+  - - '33'
+    - '2013-03-24 12:57:36.402436'
+    - '2013-03-24 15:57:03.483346'
+    - "Breccan in cream pants?\r\n\r\nA first; the omen is clear,\r\n\r\nApocalypse
+      now."
+    - -roooooooooooob
+    - haiku_audio/33.mp4
+  - - '34'
+    - '2013-03-24 13:13:04.548049'
+    - '2013-03-24 15:57:03.670435'
+    - "pleasant tree-shade spot:\r\nread textbook with smell of grass.\r\nlovely afternoon"
+    - merrin
+    - haiku_audio/34.mp4
+  - - '35'
+    - '2013-03-24 14:48:22.985542'
+    - '2013-03-24 15:57:03.805508'
+    - "railscamp afternoon,\r\nleaf shades dance on dusty glass;\r\nhangover study"
+    - merrin
+    - haiku_audio/35.mp4
+  - - '36'
+    - '2013-03-24 16:36:05.136779'
+    - '2013-03-24 16:36:05.136779'
+    - "haiku, dogsteroids:\r\namong weekend's creations.\r\nrabid brings A-game!"
+    - merrin
+    - haiku_audio/36.mp4
+  - - '38'
+    - '2013-03-24 18:20:18.590112'
+    - '2013-03-24 18:20:18.590112'
+    - "matt loves his ice cream.\r\ncoffeescript affogato:\r\na tasty dessert."
+    - merrin
+    - haiku_audio/38.mp4
+  - - '39'
+    - '2013-03-24 18:26:55.539602'
+    - '2013-03-24 18:26:55.539602'
+    - "ビールが好き\r\n美味しいですね\r\n飲みましょう"
+    - メリン
+    - 
+  - - '41'
+    - '2013-03-24 18:30:27.886016'
+    - '2013-03-24 18:30:27.886016'
+    - "Too much Macklemore? \r\n\r\nDie in a fire, honeybunch.\r\n\r\nMacklemore is
+      life."
+    - Lachypoo
+    - haiku_audio/41.mp4
+  - - '42'
+    - '2013-03-24 18:35:22.778338'
+    - '2013-03-24 18:35:22.778338'
+    - "There are a lot of\r\n        Words arranged...      by syllables\r\n                   Partly...
+      \     impressed...      me."
+    - Simon Freud
+    - haiku_audio/42.mp4
+  - - '43'
+    - '2013-03-24 18:40:00.389935'
+    - '2013-03-24 18:40:00.389935'
+    - "There. Over yonder\r\nThe weather strikes, fiercely breaks\r\nGentle taste,
+      cleavage"
+    - Simon Freud
+    - haiku_audio/43.mp4
+  - - '44'
+    - '2013-03-24 18:42:22.205694'
+    - '2013-03-24 18:42:22.205694'
+    - "straight straight straight straight straight;\r\nstraight straight straight
+      straight straight straight straight.\r\nstraight straight straight straight
+      straight!"
+    - Anonymously
+    - haiku_audio/44.mp4
+  - - '45'
+    - '2013-03-24 18:43:31.206186'
+    - '2013-03-24 18:43:31.206186'
+    - "Wow! How now brown cow?\r\nShi shi shi shi shi shi shi;\r\nBuffalo bison."
+    - Lachypoo
+    - haiku_audio/45.mp4
+  - - '46'
+    - '2013-03-24 18:47:25.371775'
+    - '2013-03-24 18:47:25.371775'
+    - "A tempting action\r\nClick! Transmuting thoughts to tounge\r\nA gulf of sadness"
+    - Lewis and Simon Freud
+    - haiku_audio/46.mp4
+  - - '47'
+    - '2013-03-24 18:51:45.550738'
+    - '2013-03-24 18:51:45.550738'
+    - "Let's play multiroids!\r\nOr is it now dogsteroids?\r\nI wanted paws wars :("
+    - Lachypoo
+    - haiku_audio/47.mp4
+  - - '48'
+    - '2013-03-24 18:56:01.451133'
+    - '2013-03-24 18:56:01.451133'
+    - "It's rails camp, you say?\r\nI guess writing coffeescript\r\nthe whole time
+      was wrong."
+    - Mathew Hartley
+    - haiku_audio/48.mp4
+  - - '49'
+    - '2013-03-24 19:03:35.487447'
+    - '2013-03-24 19:03:35.487447'
+    - I keep your format when you enter spaces very pretty look
+    - Anonymously
+    - haiku_audio/49.mp4
+  - - '50'
+    - '2013-03-24 19:05:17.9944'
+    - '2013-03-24 19:05:17.9944'
+    - "drat the pulling played!\r\nouch! hark! feeling playing shoe.\r\nMonkey plays
+      warmly"
+    - Anonymously
+    - haiku_audio/50.mp4
+  - - '51'
+    - '2013-03-24 19:10:28.49913'
+    - '2013-03-24 19:10:28.49913'
+    - "Haiku in firefox\r\nNo sound for open sauces\r\nalmost a haiku"
+    - Anonymously
+    - haiku_audio/51.mp4
+  - - '52'
+    - '2013-03-24 19:10:46.189295'
+    - '2013-03-24 19:10:46.189295'
+    - damn that rails server, eeeeeeeeeeeeeeeeeeeeeeeeeeee ooooooooooooooooooooooooooooo
+      eeeeeeeeeeeeeeeeeeeeeeeeeeeee ooooooooooooooooooooooooooooo eeeeeeeeeeeeeeeeeeeeeeeeeeeee
+      ooooooooooooooooooooooooooooo eeeeeeeeeeeeeeeeeeeeeeeeeeeee, text to audio
+    - Anonymously
+    - haiku_audio/52.mp4
+  - - '53'
+    - '2013-03-24 19:33:42.460336'
+    - '2013-03-24 19:33:42.460336'
+    - "Nick Sutterer talked.\r\nGiving feedback for all gems.\r\nA thought: Not GitHub?"
+    - Anonymously
+    - haiku_audio/53.mp4
+  - - '54'
+    - '2013-03-24 19:34:54.028191'
+    - '2013-03-24 19:34:54.028191'
+    - "Tim Carey Smith speaks.\r\nRebuilding the Sidekiq gem.\r\nWhoosh, go the concepts."
+    - Anonymously
+    - haiku_audio/54.mp4
+  - - '55'
+    - '2013-03-24 19:36:24.357983'
+    - '2013-03-24 19:36:24.357983'
+    - "Mat with just one 't'.\r\nA game: Dogsteroids. Pew pew!\r\nGoodbye, sweet doggies."
+    - Anonymously
+    - haiku_audio/55.mp4
+  - - '56'
+    - '2013-03-24 19:39:01.188189'
+    - '2013-03-24 19:39:01.188189'
+    - "Winning instantly.\r\nFeels so good, but not for long.\r\nEmptiness fills me."
+    - Anonymously
+    - haiku_audio/56.mp4
+  - - '57'
+    - '2013-03-24 19:42:15.782441'
+    - '2013-03-24 19:42:15.782441'
+    - "Recursive Haiku.\r\nYou know recursive Haiku?\r\nGo back to line one."
+    - Anonymously
+    - haiku_audio/57.mp4
+  - - '58'
+    - '2013-03-24 19:43:52.242546'
+    - '2013-03-24 19:43:52.242546'
+    - "There once was a man.\r\nWait, am I doing this right?\r\nNot a limerick."
+    - Anonymously
+    - haiku_audio/58.mp4
+  - - '59'
+    - '2013-03-24 19:45:29.933974'
+    - '2013-03-24 19:45:29.933974'
+    - "The Haiku Master,\r\nsmiles as Haiku appear.\r\nBest app at Railscamp?"
+    - Anonymously
+    - haiku_audio/59.mp4
+  - - '60'
+    - '2013-03-24 19:47:04.015281'
+    - '2013-03-24 19:47:04.015281'
+    - "By one syllable. \r\nThe last Haiku was malformed.\r\nPlease, forgive us sirs."
+    - Anonymously
+    - haiku_audio/60.mp4
+  - - '61'
+    - '2013-03-24 19:50:59.909093'
+    - '2013-03-24 19:50:59.909093'
+    - "This is not haiku\r\nNor is it limerick hah!\r\nWho the hell is it?"
+    - lachypoo
+    - haiku_audio/61.mp4
+  - - '62'
+    - '2013-03-24 19:51:02.963422'
+    - '2013-03-24 19:51:02.963422'
+    - "I like this app, yo!\r\nIt allows me to haiku\r\nWhich I like to do"
+    - parndt
+    - haiku_audio/62.mp4
+  - - '63'
+    - '2013-03-24 19:51:50.864161'
+    - '2013-03-24 19:51:50.864161'
+    - "Trapped and out of beer.\r\nEverywhere I look werewolves!\r\nSleeping in cold
+      sweat."
+    - Rob Ramsay
+    - haiku_audio/63.mp4
+  - - '64'
+    - '2013-03-24 19:59:52.551121'
+    - '2013-03-24 19:59:52.551121'
+    - "Ru-boob-ee, rubby?\r\nSignificant whitespace, eh?\r\nDangerous, but fun."
+    - lachypoo
+    - haiku_audio/64.mp4
+  - - '65'
+    - '2013-03-24 20:03:16.232058'
+    - '2013-03-24 20:03:16.232058'
+    - "seems asteroid games\r\n\r\nare a common idea\r\n\r\nwith animal themes"
+    - Anonymously
+    - haiku_audio/65.mp4
+  - - '66'
+    - '2013-03-24 20:07:02.921706'
+    - '2013-03-24 20:07:02.921706'
+    - "Dogsteroids is cool.\r\n\r\nSpace monkey poop shooter, too!\r\n\r\nThey should
+      become friends."
+    - Lachypoo
+    - haiku_audio/66.mp4
+  - - '67'
+    - '2013-03-24 20:13:16.810836'
+    - '2013-03-24 20:13:16.810836'
+    - "With Lachlan's dead site,\r\nThe Haikus are bleeding over,\r\nRyan broke space
+      time\r\n"
+    - Mathew Hartley
+    - haiku_audio/67.mp4
+  - - '68'
+    - '2013-03-24 20:22:46.223826'
+    - '2013-03-24 20:22:46.223826'
+    - "yo dog, i heard you\r\nyo dog, i heard you haiku\r\nso I haiku you"
+    - Anonymously
+    - haiku_audio/68.mp4
+  - - '69'
+    - '2013-03-24 20:25:00.801122'
+    - '2013-03-24 20:25:00.801122'
+    - "My website is back!\r\n\r\nI had some little issues,\r\n\r\nI need a sidekick."
+    - Lachypoo
+    - haiku_audio/69.mp4
+  - - '70'
+    - '2013-03-24 20:25:13.890787'
+    - '2013-03-24 20:25:13.890787'
+    - "Added unicorn;\r\n\r\nA couple more workers too\r\n\r\nLet's see how this goes."
+    - Lachypoo
+    - haiku_audio/70.mp4
+  - - '71'
+    - '2013-03-24 20:25:25.879952'
+    - '2013-03-24 20:25:25.879952'
+    - " There's an app for that;\r\n\r\nHe cries, nervously wishing,\r\n\r\nTo listen
+      to them."
+    - Lachypoo
+    - haiku_audio/71.mp4
+  - - '72'
+    - '2013-03-24 20:25:54.025111'
+    - '2013-03-24 20:25:54.025111'
+    - "Connected wrongly.\r\nPlease switch to GitHub network.\r\nYours now, anonymously."
+    - Anonymously
+    - haiku_audio/72.mp4
+  - - '73'
+    - '2013-03-24 20:25:56.775551'
+    - '2013-03-24 20:25:56.775551'
+    - "A Haiku for you,\r\nSince Lachlan's Mac is missing.\r\nI bid you adieu."
+    - Anonymously
+    - haiku_audio/73.mp4
+  - - '74'
+    - '2013-03-24 20:26:05.009626'
+    - '2013-03-24 20:26:05.009626'
+    - "The Freelancing God.\r\nSpeaks about documenting.\r\nA wise choice, wise man."
+    - Anonymously
+    - haiku_audio/74.mp4
+  - - '75'
+    - '2013-03-24 20:26:15.928121'
+    - '2013-03-24 20:26:15.928121'
+    - "Heckler in the crowd.\r\n\"Make it smaller!\", loudly said.\r\nSome giggles.
+      Success."
+    - Anonymously
+    - haiku_audio/75.mp4
+  - - '76'
+    - '2013-03-24 20:26:24.442534'
+    - '2013-03-24 20:26:24.442534'
+    - "Brett paging GitHub.\r\nMessages, every hour.\r\nLatest news only."
+    - Anonymously
+    - haiku_audio/76.mp4
+  - - '77'
+    - '2013-03-24 20:26:34.564712'
+    - '2013-03-24 20:26:34.564712'
+    - "Luke Chadwick, from Oz.\r\nHe's running Vagrant offline.\r\nShould be really
+      fast."
+    - Anonymously
+    - haiku_audio/77.mp4
+  - - '78'
+    - '2013-03-24 20:26:42.063631'
+    - '2013-03-24 20:26:42.063631'
+    - "Fast presentations.\r\nAlmost no time to think; tweet.\r\nI must think faster."
+    - Anonymously
+    - haiku_audio/78.mp4
+  - - '79'
+    - '2013-03-24 20:26:55.738737'
+    - '2013-03-24 20:26:55.738737'
+    - "The final speaker.\r\n\"Uhhhh\", fumble over Gumball.\r\nHard not to notice."
+    - Anonymously
+    - haiku_audio/79.mp4
+  - - '80'
+    - '2013-03-24 20:27:07.326678'
+    - '2013-03-24 20:27:07.326678'
+    - "Not final. Now Mal.\r\nSearching for supernovae.\r\nExplosions in spaaaaace"
+    - Anonymously
+    - haiku_audio/80.mp4
+  - - '81'
+    - '2013-03-24 20:33:15.067308'
+    - '2013-03-24 20:33:15.067308'
+    - "Following Justice,\r\nStick to the B.E.A.T.,\r\nAlso works quite well."
+    - Brett
+    - haiku_audio/81.mp4
+  - - '82'
+    - '2013-03-24 20:46:57.129636'
+    - '2013-03-24 20:46:57.129636'
+    - "You will win a prize\r\nCos of your Haikuary\r\nCongratulations"
+    - Organisers
+    - haiku_audio/82.mp4
+  - - '83'
+    - '2013-03-24 21:22:11.302774'
+    - '2013-03-24 21:22:11.302774'
+    - "Just to let you know,\r\nI'm going to feast on you.\r\nI'm not a werewolf."
+    - roooooooooooob
+    - haiku_audio/83.mp4
+  - - '84'
+    - '2013-03-24 21:22:40.221189'
+    - '2013-03-24 21:22:40.221189'
+    - "One two three four fight.\r\nStick to the B E A T\r\nReady to ignite."
+    - Anonymously
+    - haiku_audio/84.mp4
+  - - '85'
+    - '2013-03-24 21:22:51.763712'
+    - '2013-03-24 21:22:51.763712'
+    - "The screen misbehaves.\r\nSnaike, blackness, snaike, blackness. Snaike...\r\nPerhaps
+      a seizure?"
+    - Anonymously
+    - haiku_audio/85.mp4
+  - - '86'
+    - '2013-03-24 21:23:06.159511'
+    - '2013-03-24 21:23:06.159511'
+    - "A Justice Lyric:\r\n\"Do the D.A.N.C.E.\"\r\nFits format nicely."
+    - Anonymously
+    - haiku_audio/86.mp4
+  - - '87'
+    - '2013-03-24 21:23:50.976876'
+    - '2013-03-24 21:23:50.976876'
+    - "Are line breaks allowed?\r\nI've got to know. Otherwise:\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nI
+      am so sorry."
+    - Anonymously
+    - haiku_audio/87.mp4
+  - - '88'
+    - '2013-03-24 21:26:41.506447'
+    - '2013-03-24 21:26:41.506447'
+    - "Werewolf is the best\r\nJordan is quite suspicious\r\nVillager or wolf?"
+    - Lachypoo
+    - haiku_audio/88.mp4
+  - - '89'
+    - '2013-03-24 23:19:43.24066'
+    - '2013-03-24 23:19:43.24066'
+    - "Lachlan he must die.\r\nHis wolfy smile freaks me out.\r\nvollagers join me!"
+    - robramsaynz
+    - haiku_audio/89.mp4
+  - - '90'
+    - '2013-03-24 23:21:35.990822'
+    - '2013-03-24 23:21:35.990822'
+    - "I suspect Breccan. \r\nFellow villagers listen,\r\nfor haikus don't lie."
+    - robramsaynz
+    - haiku_audio/90.mp4
+  - - '91'
+    - '2013-03-24 23:23:12.866285'
+    - '2013-03-24 23:23:12.866285'
+    - "A simple request\r\nPlease don't kill me so quickly\r\nI'm not a werewolf"
+    - Lachypoo
+    - haiku_audio/91.mp4
+  - - '92'
+    - '2013-03-24 23:23:39.884609'
+    - '2013-03-24 23:23:39.884609'
+    - "Rob is a werewolf.\r\nKill him dead today!\r\nLook, suspicious hat"
+    - Anonymously
+    - haiku_audio/92.mp4
+  - - '93'
+    - '2013-03-24 23:24:59.098152'
+    - '2013-03-24 23:24:59.098152'
+    - "villager I am.\r\nA vicious accusation.\r\nI suspect blood lust.\r\n"
+    - robramsaynz
+    - haiku_audio/93.mp4
+  - - '94'
+    - '2013-03-25 00:26:58.879529'
+    - '2013-03-25 00:26:58.879529'
+    - "The forlorn lovers;\r\nKilled by wolf or witching ways.\r\nWhat becomes of
+      us?"
+    - Lachypoo
+    - haiku_audio/94.mp4
+  - - '95'
+    - '2013-03-25 00:28:28.271641'
+    - '2013-03-25 00:28:28.271641'
+    - "I believe in love;\r\nDo you believe in magic?\r\nScience reigns supreme."
+    - Lachypoo
+    - haiku_audio/95.mp4
+  - - '96'
+    - '2013-03-25 00:30:18.89138'
+    - '2013-03-25 00:30:18.89138'
+    - "Eyeless, powerless;\r\nthe villagers now scramble,\r\naimlessly lynching."
+    - Lachypoo
+    - haiku_audio/96.mp4
+  - - '97'
+    - '2013-03-25 00:30:54.638538'
+    - '2013-03-25 00:30:54.638538'
+    - "Merrin, merrin, come!\r\nHaiku this game with me please;\r\nPoetry is good."
+    - Lachypoo
+    - haiku_audio/97.mp4
+  - - '98'
+    - '2013-03-25 00:32:42.76964'
+    - '2013-03-25 00:32:42.76964'
+    - "I died: why the heck?\r\nVillage will surely win this\r\nOnly one more wolf"
+    - Merrin
+    - haiku_audio/98.mp4
+  - - '99'
+    - '2013-03-25 00:36:03.594084'
+    - '2013-03-25 00:36:03.594084'
+    - "Totally called it;\r\nshe always looked so shifty.\r\nI told you all so!"
+    - Lachypoo
+    - haiku_audio/99.mp4
+  - - '100'
+    - '2013-03-25 00:39:24.334077'
+    - '2013-03-25 00:39:24.334077'
+    - "You totally did\r\nNice going, Lachlan my chum\r\nBut will they get her"
+    - Merrin
+    - haiku_audio/100.mp4
+  - - '101'
+    - '2013-03-25 00:40:23.599253'
+    - '2013-03-25 00:40:23.599253'
+    - "Hopefully they will,\r\nBut let's be serious here,\r\nDemocracy fails."
+    - Lachypoo
+    - haiku_audio/101.mp4
+  - - '102'
+    - '2013-03-25 00:41:25.92965'
+    - '2013-03-25 00:41:25.92965'
+    - "If Lachlan ran town\r\nIt would be dictatorship\r\nBreccan dies each day"
+    - Merrin
+    - haiku_audio/102.mp4
+  - - '103'
+    - '2013-03-25 00:42:40.399793'
+    - '2013-03-25 00:42:40.399793'
+    - "No need to work though,\r\nAll the cats that you desire;\r\nWho gets your vote
+      now?"
+    - Lachypoo
+    - haiku_audio/103.mp4
+  - - '104'
+    - '2013-03-25 00:43:46.839708'
+    - '2013-03-25 00:43:46.839708'
+    - "Hypothetically,\r\nMy vote is irrelevant.\r\nTake power by force."
+    - Merrin
+    - haiku_audio/104.mp4
+  - - '105'
+    - '2013-03-25 00:45:29.25441'
+    - '2013-03-25 00:45:29.25441'
+    - "I want to earn it,\r\nbut not have bureaucracy;\r\nis that fair enough?"
+    - Lachypoo
+    - haiku_audio/105.mp4
+  - - '106'
+    - '2013-03-25 00:48:22.050201'
+    - '2013-03-25 00:48:22.050201'
+    - "Things don't work that way.\r\nYou need a cult, lots of guns. \r\nProbably
+      brainwash."
+    - Merrin
+    - haiku_audio/106.mp4
+  - - '107'
+    - '2013-03-25 00:50:34.668459'
+    - '2013-03-25 00:50:34.668459'
+    - "Haiku must wait now\r\nI want the real internet\r\nBefore laptop dies"
+    - Merrin
+    - haiku_audio/107.mp4
+  - - '108'
+    - '2013-03-25 00:51:19.072352'
+    - '2013-03-25 00:51:19.072352'
+    - "They all do it wrong;\r\nThe plan is lead with science,\r\nThey all come running."
+    - Lachypoo
+    - haiku_audio/108.mp4
+  - - '109'
+    - '2013-03-24 20:17:03.891523'
+    - '2013-03-24 20:17:03.891523'
+    - "I'm Mathew Hartley,\r\nbefore the third tequila.\r\nAfter that; not sure"
+    - merrin & roooooooob
+    - haiku_audio/109.mp4
+  - - '110'
+    - '2013-03-24 20:17:34.842801'
+    - '2013-03-24 20:17:34.842801'
+    - "This is a haiku - \r\nabout friendship and liquor;\r\nthey are best combined."
+    - Mathew
+    - haiku_audio/110.mp4
+  - - '111'
+    - '2013-03-24 20:18:05.098651'
+    - '2013-03-24 20:18:05.098651'
+    - "Merrin ran away.\r\nShe'll be back for the haiku;\r\nHa ha ha ha ha"
+    - Lachypoo
+    - haiku_audio/111.mp4
+  - - '112'
+    - '2013-03-24 20:18:34.057753'
+    - '2013-03-24 20:18:34.057753'
+    - "I miss dragonball;\r\nGoku was ridiculous,\r\nKamehameha."
+    - Lachypoo
+    - haiku_audio/112.mp4
+  - - '113'
+    - '2013-03-24 20:24:24.802474'
+    - '2013-03-24 20:24:24.802474'
+    - "Hi, my name is Matt;\r\nand I'm an alcoholic.\r\nWelcome Matt, want beer?"
+    - Mathew
+    - haiku_audio/113.mp4
+  - - '114'
+    - '2013-03-24 20:28:33.472192'
+    - '2013-03-24 20:28:33.472192'
+    - "Last railscamp morning;\r\nLast night's Werewolves look guilty,\r\nWhiskey
+      heads regret."
+    - roooooooooooob & merrrrinnnnnnnnnnnnnnn
+    - haiku_audio/114.mp4
+  - - '115'
+    - '2013-03-24 20:29:19.959407'
+    - '2013-03-24 20:29:19.959407'
+    - "Bye Haikuary,\r\nSoon you will be all gone;\r\nHaikuphilia."
+    - Brett
+    - haiku_audio/115.mp4
+  - - '116'
+    - '2013-03-24 20:30:56.054621'
+    - '2013-03-24 20:30:56.054621'
+    - "soon it is bus time\r\nwe'll travel down together\r\nall except for rrrrrroooooooooooobbbb "
+    - mmmmmmmeeeeeerrrrrriiiiinnnnnnn
+    - haiku_audio/116.mp4
+  - - '117'
+    - '2013-03-24 20:33:28.168635'
+    - '2013-03-24 20:33:28.168635'
+    - "Good luck rails campers,\r\nToday you find all the pains;\r\nYou deserve it
+      all."
+    - Lachypoo
+    - haiku_audio/117.mp4
+  - - '118'
+    - '2013-03-24 20:39:45.415371'
+    - '2013-03-24 20:39:45.415371'
+    - "He got all tied up;\r\nwent better than expected.\r\nNow they are happy."
+    - Anonymously
+    - haiku_audio/118.mp4
+  - - '119'
+    - '2013-03-24 20:41:02.817673'
+    - '2013-03-24 20:41:02.817673'
+    - "Wake me when bus comes!\r\nUntil then, I'll watch the clouds;\r\nJust kidding,
+      sleeping."
+    - Mathew
+    - haiku_audio/119.mp4
+  - - '120'
+    - '2013-03-24 20:42:57.592921'
+    - '2013-03-24 20:42:57.592921'
+    - "This voice is okay;\r\nBut I would prefer glados;\r\nThis was a triumph."
+    - Lachypoo & Brett
+    - haiku_audio/120.mp4
+  - - '121'
+    - '2013-03-24 20:43:47.273517'
+    - '2013-03-24 20:43:47.273517'
+    - "Where is the damn bus;\r\nGod damn, where is the damn bus,\r\nI want the damn
+      bus."
+    - Mathew & Merrin
+    - haiku_audio/121.mp4
+  - - '122'
+    - '2013-03-24 20:50:57.461574'
+    - '2013-03-24 20:50:57.461574'
+    - "Great job team Rabid!\r\nBringing haiku to rails camp.\r\nHaters gonna hate."
+    - Mathew & Mer
+    - haiku_audio/122.mp4
