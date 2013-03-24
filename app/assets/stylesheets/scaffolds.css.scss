@@ -26,7 +26,8 @@
   display:block;
   margin:0 auto;
   text-align: center;
-  width:40%;
+  width:400px;
+  max-width:90%;
   border:thin grey solid;
   padding:10px;
   @include border-radius(5px);
@@ -57,7 +58,8 @@
   @include border-radius(5px);
   display:block;
   margin:10px auto;
-  width:40%;
+  width:400px;
+  max-width:90%;
   text-align: center;
   box-shadow: 1px 1px 1px;
 }
