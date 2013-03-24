@@ -27,7 +27,6 @@
   margin:0 auto;
   text-align: center;
   width:400px;
-  max-width:90%;
   border:thin grey solid;
   padding:10px;
   @include border-radius(5px);
@@ -44,7 +43,6 @@
   @include border-radius(5px);
 }
 
-
 .haiku-right {
   position:absolute;
   top:5px;
@@ -59,7 +57,6 @@
   display:block;
   margin:10px auto;
   width:400px;
-  max-width:90%;
   text-align: center;
   box-shadow: 1px 1px 1px;
 }
@@ -70,7 +67,6 @@
   textarea {
     margin:10px auto;
     width:400px;
-    max-width:90%;
     display:block;
   }
   label {
@@ -92,18 +88,16 @@
   font-size:.8em;
 }
 
-embed {
-  display:block;
-  margin:0 auto;
-}
 body {
   background:url("black_@2X.png") repeat fixed;
 }
+
 .navbar-top, .navbar-inner {
   background:url("low_contrast_linen_@2X.png") repeat;
   border:none;
   @include border-radius(0);
 }
+
 .navbar-top {
   position:fixed;
   top:0;
