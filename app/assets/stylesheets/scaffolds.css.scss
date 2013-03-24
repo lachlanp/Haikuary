@@ -27,6 +27,7 @@
   margin:0 auto;
   text-align: center;
   width:400px;
+  max-width:90%;
   border:thin grey solid;
   padding:10px;
   @include border-radius(5px);
@@ -57,17 +58,20 @@
   display:block;
   margin:10px auto;
   width:400px;
+  max-width:90%;
   text-align: center;
   box-shadow: 1px 1px 1px;
 }
 
 .form_page {
-  width:60%;
+  width:450px;
   margin:0 auto;
   textarea {
     margin:10px auto;
     width:400px;
+    max-width:90%;
     display:block;
+    max-width: 100%
   }
   label {
     font-size:1.5em;
