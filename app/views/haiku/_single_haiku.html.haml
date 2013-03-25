@@ -1,4 +1,4 @@
-.pretty_haiku
+.pretty_haiku{class: "haiku_#{single_haiku.id}"}
   .haiku=simple_format single_haiku.description
   .author  -  #{single_haiku.author}
   -if single_haiku.file_path.present?

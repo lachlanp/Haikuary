@@ -24,6 +24,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'google-api-client'
 gem 'jquery-rails'
 gem 'haml-rails'
 gem "will_paginate"
