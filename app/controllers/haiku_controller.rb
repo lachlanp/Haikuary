@@ -37,7 +37,7 @@ class HaikuController < ApplicationController
   private
 
   def lets_init_haiku
-    @haiku = Haiku.find(:id)
+    @single_haiku = Haiku.find_by_id(params[:id])
   end
 
   def haiku_params
