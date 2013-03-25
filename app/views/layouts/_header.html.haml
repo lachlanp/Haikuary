@@ -1,7 +1,7 @@
 .navbar-top
   .navbar-inner
     = link_to "Haikuary", root_path, class: "page_title"
-    %audio.rainy{ controls: "controls"}
-      %source{ src: "/Rainymood.mp3"}
+    %audio.rainy{ controls: "controls", loop: "loop"}
+      %source{ src: "/Rain.mp3"}
     = link_to "Create a Haiku", new_haiku_path, class: "btn btn-primary haiku-right"
 
