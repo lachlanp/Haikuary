@@ -2,7 +2,11 @@
 %html{lang: "en"}
   %head
     %title Haikuary
-    %link{:href=>"/favicon.png", :rel=> "shortcut icon"}
+    %link{href: "/favicon.png", rel: "shortcut icon"}
+    %meta{property: "og:title", content: "Haikuary"}
+    %meta{property: "og:site_name", content: "Haikuary"}
+    %meta{property: "og:url", content: "http://haikuary.herokuapp.com"}
+    %meta{content: "http://haikuary.herokuapp.com/haiku200.png", property: "og:image"}
     = csrf_meta_tags
     = stylesheet_link_tag "application", media: "all"
   %body
