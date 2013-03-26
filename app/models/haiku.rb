@@ -2,6 +2,7 @@ class Haiku < ActiveRecord::Base
   validate :word_count_less_than_18
   #validate :well_formed
   # after_save :create_audio_file
+  validates_presence_of :description
 
   def create_audio_file
     possible_path = "haiku_audio/#{self.id}.mp4"
