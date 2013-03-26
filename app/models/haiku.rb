@@ -19,6 +19,10 @@ class Haiku < ActiveRecord::Base
     end
   end
 
+  def is_new_line_formatted?
+    self.description.lines.count >= 3
+  end
+
   private
   def word_count_less_than_18
     errors[:widget] << "too many words" if description.split.size > 17

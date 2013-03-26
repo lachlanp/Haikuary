@@ -2,6 +2,8 @@ Haikuary::Application.routes.draw do
 
   resources :haiku
 
+  get 'random' => 'haiku#random'
+
   root to: 'haiku#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -34,6 +34,10 @@ class HaikuController < ApplicationController
     end
   end
 
+  def random
+    @haiku = HaikuMaker.new.generate
+  end
+
   private
 
   def lets_init_haiku
