@@ -19,7 +19,7 @@ class HaikuMaker
     haiku_list = []
     while haiku_list.count < 3 do
       haiku = get_random
-      haiku_list << haiku if haiku.is_new_line_formatted?
+      haiku_list << haiku if haiku && haiku.is_new_line_formatted?
     end
     haiku_list
   end
