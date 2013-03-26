@@ -9,6 +9,7 @@
     %meta{content: "http://haikuary.herokuapp.com/haiku200.png", property: "og:image"}
     = csrf_meta_tags
     = stylesheet_link_tag "application", media: "all"
+    = analytics_init if Rails.env.production?
   %body
     = render 'layouts/header'
     .content

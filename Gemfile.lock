@@ -82,6 +82,7 @@ GEM
     faraday (0.8.7)
       multipart-post (~> 1.1)
     ffi (1.5.0)
+    google-analytics-rails (0.0.4)
     google-api-client (0.6.2)
       addressable (>= 2.3.2)
       autoparse (>= 0.3.2)
@@ -212,6 +213,7 @@ DEPENDENCIES
   coffee-rails (>= 4.0.0.beta1)
   debugger
   factory_girl_rails (>= 4.0.0)
+  google-analytics-rails
   google-api-client
   haml-rails
   jquery-rails
