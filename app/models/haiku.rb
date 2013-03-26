@@ -1,7 +1,7 @@
 class Haiku < ActiveRecord::Base
   validate :word_count_less_than_18
   #validate :well_formed
-  after_save :create_audio_file
+  # after_save :create_audio_file
 
   def create_audio_file
     possible_path = "haiku_audio/#{self.id}.mp4"
@@ -22,7 +22,7 @@ class Haiku < ActiveRecord::Base
   def word_count_less_than_18
     errors[:widget] << "too many words" if description.split.size > 17
   end
-  
+
   def word_check(word)
     word.downcase!
     return 1 if word.length <= 3
