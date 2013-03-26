@@ -3,6 +3,8 @@ class Haiku < ActiveRecord::Base
   #validate :well_formed
   # after_save :create_audio_file
   validates_presence_of :description
+  validates_length_of :description, minimum: 30, message: "Your Haiku is too short! Minimum 30 characters."
+  validate :formation
 
   def create_audio_file
     possible_path = "haiku_audio/#{self.id}.mp4"
@@ -25,7 +27,7 @@ class Haiku < ActiveRecord::Base
 
   private
   def word_count_less_than_18
-    errors[:widget] << "too many words" if description.split.size > 17
+    errors[:description] << "too many words" if description.split.size > 17
   end
 
   def word_check(word)
@@ -46,7 +48,11 @@ class Haiku < ActiveRecord::Base
     framing = [5,7,5]
     description.split("\n").each_with_index do |line, index|
       count = dissect_line(line).inject(&:+)
-      errors[:widget] << "is invalid on line #{index+1}" if framing[index] != count
+      errors[:description] << "is invalid on line #{index+1}" if framing[index] != count
     end
+  end
+
+  def formation
+    errors[:description] << "Please use multiple lines." unless description.lines.count >= 3
   end
 end

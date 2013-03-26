@@ -134,3 +134,12 @@ audio {
   max-width:300px;
 
 }
+.error {
+  color:#b94a48;
+  background-color: #f2dede;
+  width:90%;
+  display:block;
+  margin:10px auto;
+  padding:10px;
+  @include border-radius(5px);
+}
