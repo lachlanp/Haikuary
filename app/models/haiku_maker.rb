@@ -29,6 +29,6 @@ class HaikuMaker
   def get_random
     random_offset = rand(Haiku.count - 1)
 
-    Haiku.offset(random_offset).limit(1).first
+    Haiku.not_generated.offset(random_offset).limit(1).first
   end
 end

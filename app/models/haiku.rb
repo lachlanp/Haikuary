@@ -6,6 +6,8 @@ class Haiku < ActiveRecord::Base
   validates_length_of :description, minimum: 30, message: "Your Haiku is too short! Minimum 30 characters."
   validate :formation
 
+  scope :not_generated, -> { where(Haiku.arel_table[:author].not_eq('Happy Haiku Bot')) }
+
   def create_audio_file
     possible_path = "haiku_audio/#{self.id}.mp4"
     local_path = Rails.root + 'public/' + possible_path
