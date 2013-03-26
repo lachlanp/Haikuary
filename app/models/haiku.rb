@@ -5,6 +5,7 @@ class Haiku < ActiveRecord::Base
   validates_presence_of :description
   validates_length_of :description, minimum: 30, message: "Your Haiku is too short! Minimum 30 characters."
   validate :formation
+  validates_uniqueness_of :description
 
   scope :not_generated, -> { where(Haiku.arel_table[:author].not_eq('Happy Haiku Bot')) }
 
