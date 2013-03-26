@@ -1,12 +1,12 @@
 !!!
 %html{lang: "en"}
   %head
-    %title Haikuary
+    %title Haiku d'etat
     %link{href: "/favicon.png", rel: "shortcut icon"}
-    %meta{property: "og:title", content: "Haikuary"}
-    %meta{property: "og:site_name", content: "Haikuary"}
-    %meta{property: "og:url", content: "http://haikuary.herokuapp.com"}
-    %meta{content: "http://haikuary.herokuapp.com/haiku200.png", property: "og:image"}
+    %meta{property: "og:title", content: "Haiku d'etat"}
+    %meta{property: "og:site_name", content: "Haiku d'etat"}
+    %meta{property: "og:url", content: "http://www.haikudetat.com"}
+    %meta{content: "http://www.haikudetat.com/haiku200.png", property: "og:image"}
     = csrf_meta_tags
     = stylesheet_link_tag "application", media: "all"
     = analytics_init if Rails.env.production?
@@ -18,12 +18,4 @@
 
     .footer
       = javascript_include_tag "application"
-      :javascript
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-39606262-1', 'herokuapp.com');
-        ga('send', 'pageview');
       = yield :footer
