@@ -10,4 +10,3 @@ jQuery ->
         $('.pagination').html("<div class='profile-block padded pagination-width'>Waiting for Haiku/ or maybe on Ohiro/ Who would really know?</div>")
         $.getScript(url)
     $(window).scroll()
-

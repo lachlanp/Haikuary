@@ -56,6 +56,8 @@ class Haiku < ActiveRecord::Base
   end
 
   def formation
-    errors[:description] << "Please use multiple lines." unless description.lines.count >= 3
+    errors[:description] << "Please use 3 lines." unless description.lines.count >= 3
+    errors[:description] << "Please use only 3 lines." unless description.lines.count <= 3
+
   end
 end

@@ -20,6 +20,7 @@ class HaikuController < ApplicationController
 
   def create
     @haiku = Haiku.new(haiku_params)
+    @haiku.haiku_url_cache = `curl "http://tts-api.com/tts.mp3?q=#{@haiku.description.gsub(/[\n\r]/," ").gsub(";",":").split().join("+")}&return_url=1"`
     respond_to do |format|
       if @haiku.save
         format.html {redirect_to root_path, notice: Haiku.all.sample.description}
