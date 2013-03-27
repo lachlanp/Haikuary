@@ -7,11 +7,11 @@
   -if single_haiku.haiku_url_cache.present?
     %audio{ controls: "controls"}
       %source{ src: single_haiku.haiku_url_cache }
-  -else
+  -elsif single_haiku.persisted?
     .profile-block-haiku
       %p Alex can't read me,
       %p this poem must sit mutely;
       %p Blame speech synthesis
 
-  %a.twitter-share-button{"data-lang" => "en", "data-count" => "none", "data-text" => "#{twitter_description(single_haiku)} - #{single_haiku.author} ", "data-url" => "#{haiku_url}",  "data-hashtags" => "haikuary", :href => "https://twitter.com/share"} Tweet
+  %a.twitter-share-button{"data-lang" => "en", "data-count" => "none", "data-text" => "#{twitter_description(single_haiku)} - #{single_haiku.author} ", "data-url" => "#{haiku_url}",  "data-hashtags" => "haikudetat", :href => "https://twitter.com/share"} Tweet
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
