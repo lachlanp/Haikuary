@@ -79,7 +79,9 @@
 }
 
 .form_page {
-  width:450px;
+  width:90%;
+  min-width: 300px;
+  max-width: 600px;
   margin:0 auto;
   textarea {
     margin:10px auto;
@@ -101,6 +103,7 @@
   #haiku_author {
     margin:20px auto;
     display:block;
+    padding:10px;
   }
 }
 .author {
