@@ -3,7 +3,7 @@
   .author  -  #{single_haiku.author}
 
 
-  -haiku_url = single_haiku.persisted? ? "#{root_url}/haiku/#{single_haiku.id}" : "#{root_url}"
+  -haiku_url = single_haiku.persisted? ? "#{root_url}haiku/#{single_haiku.id}" : "#{root_url}"
   -if single_haiku.haiku_url_cache.present?
     %audio{ controls: "controls"}
       %source{ src: single_haiku.haiku_url_cache }
