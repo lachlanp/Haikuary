@@ -8,6 +8,7 @@
     %meta{property: "og:url", content: "http://www.haikudetat.com"}
     %meta{content: "http://www.haikudetat.com/haiku200.png", property: "og:image"}
     %link{href: 'http://fonts.googleapis.com/css?family=Parisienne', rel:'stylesheet'}
+    %meta{content: "width=device-width, initial-scale=1.0, maximum-scale=1.0; user-scalable=no", name: "viewport"}
     = csrf_meta_tags
     = stylesheet_link_tag "application", media: "all"
     = analytics_init if Rails.env.production?
