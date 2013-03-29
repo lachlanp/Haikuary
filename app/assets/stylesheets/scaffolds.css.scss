@@ -52,11 +52,6 @@
   @include border-radius(5px);
 }
 
-.haiku-right {
-  position:absolute;
-  top:5px;
-  right:10px;
-}
 
 .pretty_haiku {
   background:url("/grey_@2X.png") repeat;
@@ -72,10 +67,16 @@
   box-shadow: 1px 1px 1px;
   position:relative;
 }
+
 .haiku-left {
   position:absolute;
   top:5px;
   left:10px;
+}
+.haiku-right {
+  position:absolute;
+  top:5px;
+  right:10px;
 }
 
 .form_page {
@@ -119,6 +120,9 @@ body {
   background:url("/low_contrast_linen_@2X.png") repeat;
   border:none;
   @include border-radius(0);
+}
+.navbar-inner {
+  padding:0;
 }
 
 .navbar-top {
