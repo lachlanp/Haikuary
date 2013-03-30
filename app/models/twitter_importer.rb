@@ -38,7 +38,6 @@ class Tweet
   end
 
   def self.parse(result)
-    return false if result["text"].index("haikudetat.com")
     Tweet.new({
       created_at: DateTime.parse(result["created_at"]),
 
@@ -51,20 +50,18 @@ class Tweet
 
   def initialize(params)
     @created_at = params[:created_at] || DateTime.now
-
     @author = params[:user] || ""         # "robramsaynz",
     @text = params[:tweet] || ""       # "#webstock woot!",
     #haikuify the tweet
-    @tweeted_haiku = @text.gsub("/", "\r\n").gsub("@\w*", " ").gsub("#\w*", " ")
+    @tweeted_haiku = @text.gsub(/(?:f|ht)tps?:\/[^\s]+/, '').gsub("/", "\r\n").gsub( /[@#]\S+/, '' )
     @tweet_id = params[:tweet_id] || 0  # "301283191396909057"
-
   end
 
   def save_haiku()
     haiku = Haiku.find_or_initialize_by_source_id(@tweet_id)
 
     haiku.created_at = @created_at
-
+    haiku.haiku_url_cache = `curl "http://tts-api.com/tts.mp3?q=#{@tweeted_haiku.gsub(/[\n\r]/," ").gsub(";",":").split().join("+")}&return_url=1"`
     haiku.description = "#{@tweeted_haiku}"
     haiku.source_id = @tweet_id
     haiku.author = @author
@@ -76,6 +73,6 @@ class Tweet
   end
 
   def to_s()
-    "@#{@user}: #{@tweet}\n" + "  #{self.url}\n"
+    "@#{@autor}: #{@tweet}\n" + "  #{self.url}\n"
   end
 end

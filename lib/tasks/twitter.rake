@@ -4,6 +4,6 @@ namespace :import do
   task twitter_haikudetat: :environment do
     tweets = TwitterImporter.latest_tweets
     tweets.each {|t| t.save_haiku }
-    # tweets.each {|t| puts t.to_s }
+    tweets.each {|t| puts t.to_s }
   end
 end

@@ -9,14 +9,14 @@ class Haiku < ActiveRecord::Base
 
   scope :not_generated, -> { where(Haiku.arel_table[:author].not_eq('Happy Haiku Bot')) }
 
-  def create_audio_file
-    possible_path = "haiku_audio/#{self.id}.mp4"
-    local_path = Rails.root + 'public/' + possible_path
-    `say "#{self.description}" -o #{local_path}`
-    if File.size(local_path) > 10000
-      self.update_column(:file_path, possible_path)
-    end
-  end
+  # def create_audio_file
+  #   possible_path = "haiku_audio/#{self.id}.mp4"
+  #   local_path = Rails.root + 'public/' + possible_path
+  #   `say "#{self.description}" -o #{local_path}`
+  #   if File.size(local_path) > 10000
+  #     self.update_column(:file_path, possible_path)
+  #   end
+  # end
 
   def dissect
     description.split("\n").each_with_index.map do |line, index|
