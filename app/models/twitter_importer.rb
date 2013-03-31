@@ -38,6 +38,7 @@ class Tweet
   end
 
   def self.parse(result)
+    return nil if result["text"].match(/(?:f|ht)tps?:\/[^\s]+/)
     Tweet.new({
       created_at: DateTime.parse(result["created_at"]),
 
@@ -73,6 +74,6 @@ class Tweet
   end
 
   def to_s()
-    "@#{@autor}: #{@tweet}\n" + "  #{self.url}\n"
+    "@#{@author}: #{@tweeted_haiku}\n" + "  #{self.url}\n"
   end
 end

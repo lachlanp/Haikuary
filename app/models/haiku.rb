@@ -2,6 +2,7 @@ class Haiku < ActiveRecord::Base
   validate :word_count_less_than_18
   #validate :well_formed
   # after_save :create_audio_file
+  after_save :audio_file
   validates_presence_of :description
   validates_length_of :description, minimum: 30, message: "Your Haiku is too short! Minimum 30 characters."
   validate :formation
@@ -17,6 +18,11 @@ class Haiku < ActiveRecord::Base
   #     self.update_column(:file_path, possible_path)
   #   end
   # end
+
+  def audio_file
+    @audio = `curl "http://tts-api.com/tts.mp3?q=#{self.description.gsub(/[\n\r]/," ").gsub(";",":").split().join("+")}&return_url=1"`
+    self.update_column(:haiku_url_cache, @audio)
+  end
 
   def dissect
     description.split("\n").each_with_index.map do |line, index|
