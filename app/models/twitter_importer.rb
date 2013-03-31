@@ -13,9 +13,10 @@ class TwitterImporter
   end
 
   def self.latest_tweets
+    #filters links and RT
     since_id = 0
     base_url = "https://search.twitter.com/search.json" +
-    queries = "?q=%23haikudetat" +
+    queries = "?q=%23haikudetat%20-filter%3Alinks%20-RT" +
               #"&since_id=#{Tweet.newest.source_id}"+
               "&result_type=recent"+
               "&rpp=100"+
@@ -62,7 +63,7 @@ class Tweet
     haiku = Haiku.find_or_initialize_by_source_id(@tweet_id)
 
     haiku.created_at = @created_at
-    haiku.haiku_url_cache = `curl "http://tts-api.com/tts.mp3?q=#{@tweeted_haiku.gsub(/[\n\r]/," ").gsub(";",":").split().join("+")}&return_url=1"`
+    # haiku.haiku_url_cache = `curl "http://tts-api.com/tts.mp3?q=#{@tweeted_haiku.gsub(/[\n\r]/," ").gsub(";",":").split().join("+")}&return_url=1"`
     haiku.description = "#{@tweeted_haiku}"
     haiku.source_id = @tweet_id
     haiku.author = @author
