@@ -58,8 +58,10 @@ class Tweet
     @remove_url = @text.gsub(/(?:f|ht)tps?:\/[^\s]+/, '')
     @replace_slash_w_newline = @remove_url.gsub("/", "\r\n")
     @remove_hashtag_mention = @replace_slash_w_newline.gsub( /[@#]\S+/, '' )
-    @strip_empty_space = @remove_hashtag_mention.gsub(/^$\n/, '')
-    @tweeted_haiku = @strip_empty_space
+    @replacing_newlines = @remove_hashtag_mention.gsub(/[\r\n]+/, "\n")
+    @tweeted_haiku = @replacing_newlines.split("\n").reject do |line|
+      line =~ /\A\s+\z/
+    end.join "\n"
     @tweet_id = params[:tweet_id] || 0  # "301283191396909057"
   end
 
