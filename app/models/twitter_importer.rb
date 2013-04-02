@@ -55,7 +55,11 @@ class Tweet
     @author = params[:user] || ""         # "robramsaynz",
     @text = params[:tweet] || ""       # "#webstock woot!",
     #haikuify the tweet
-    @tweeted_haiku = @text.gsub(/(?:f|ht)tps?:\/[^\s]+/, '').gsub("/", "\r\n").gsub( /[@#]\S+/, '' )
+    @remove_url = @text.gsub(/(?:f|ht)tps?:\/[^\s]+/, '')
+    @replace_slash_w_newline = @remove_url.gsub("/", "\r\n")
+    @remove_hashtag_mention = @replace_slash_w_newline.gsub( /[@#]\S+/, '' )
+    @strip_empty_space = @remove_hashtag_mention.gsub(/^$\n/, '')
+    @tweeted_haiku = @strip_empty_space
     @tweet_id = params[:tweet_id] || 0  # "301283191396909057"
   end
 
