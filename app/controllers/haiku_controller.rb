@@ -8,7 +8,6 @@ class HaikuController < ApplicationController
       @list_many_haiku = Haiku.order('id DESC').page(params[:page]).per_page(20)
     end
     # @github_location = "http://github.rc/lachypoo/Haikuary/raw/master/public/haiku_audio/"
-
   end
 
   def show
