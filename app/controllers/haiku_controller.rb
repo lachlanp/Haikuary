@@ -2,7 +2,11 @@ class HaikuController < ApplicationController
   before_filter :lets_init_haiku, only: [ :show ]
 
   def index
-    @list_many_haiku = Haiku.order('id DESC').page(params[:page]).per_page(20)
+    if (params[:haiku] && Haiku.all.collect(&:author).include?(params[:haiku][:author]))
+      @list_many_haiku = Haiku.where(params[:author])
+    else
+      @list_many_haiku = Haiku.order('id DESC').page(params[:page]).per_page(20)
+    end
     # @github_location = "http://github.rc/lachypoo/Haikuary/raw/master/public/haiku_audio/"
 
   end
