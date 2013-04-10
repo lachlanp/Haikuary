@@ -3,7 +3,7 @@ class HaikuController < ApplicationController
 
   def index
     if (params[:haiku] && Haiku.all.collect(&:author).include?(params[:haiku][:author]))
-      @list_many_haiku = Haiku.where(params[:author])
+      @list_many_haiku = Haiku.where(author: params[:haiku][:author]).order('id DESC').page(params[:page]).per_page(20)
     else
       @list_many_haiku = Haiku.order('id DESC').page(params[:page]).per_page(20)
     end
