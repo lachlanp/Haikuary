@@ -182,6 +182,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+    syllable-counter (0.0.2)
     thin (1.5.1)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -224,6 +225,7 @@ DEPENDENCIES
   rspec-rails (>= 2.11.0)
   sass-rails (>= 4.0.0.beta1)
   simple_form
+  syllable-counter
   thin
   uglifier (>= 1.0.3)
   will_paginate
