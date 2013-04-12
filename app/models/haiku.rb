@@ -48,7 +48,7 @@ class Haiku < ActiveRecord::Base
   end
 
   def dissect_line(line)
-    Syllables.get_syllables(line)
+    SyllableCounter.get_syllables(line)
   end
 
   def well_formed

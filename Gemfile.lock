@@ -5,6 +5,12 @@ GIT
   specs:
     yaml_db (0.2.3)
 
+GIT
+  remote: git://github.com/kelseymok/syllable_counter.git
+  revision: 7ccfd8a9ea1e518fdd1311fe61b209f961ba9b80
+  specs:
+    syllable_counter (0.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -182,7 +188,6 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
-    syllable-counter (0.0.2)
     thin (1.5.1)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -225,7 +230,7 @@ DEPENDENCIES
   rspec-rails (>= 2.11.0)
   sass-rails (>= 4.0.0.beta1)
   simple_form
-  syllable-counter
+  syllable_counter!
   thin
   uglifier (>= 1.0.3)
   will_paginate
