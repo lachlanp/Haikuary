@@ -1,5 +1,5 @@
 module HaikuHelper
   def twitter_description(haiku)
-    haiku.description.gsub(/\r\n/, "/")
+    haiku.description
   end
 end
