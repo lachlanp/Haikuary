@@ -19,6 +19,12 @@ class Haiku < ActiveRecord::Base
   #   end
   # end
 
+  def self.get_random
+    random_offset = rand(Haiku.count - 1)
+
+    Haiku.not_generated.offset(random_offset).limit(1).first
+  end
+
   def audio_file
     @audio = `curl "http://tts-api.com/tts.mp3?q=#{self.description.gsub(/[\n\r]/," ").gsub(";",":").split().join("+")}&return_url=1"`
     self.update_column(:haiku_url_cache, @audio)

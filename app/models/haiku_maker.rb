@@ -18,17 +18,9 @@ class HaikuMaker
     return @haiku_list if @haiku_list.present?
     haiku_list = []
     while haiku_list.count < 3 do
-      haiku = get_random
+      haiku = Haiku.get_random
       haiku_list << haiku if haiku && haiku.is_new_line_formatted?
     end
     haiku_list
-  end
-
-  private
-
-  def get_random
-    random_offset = rand(Haiku.count - 1)
-
-    Haiku.not_generated.offset(random_offset).limit(1).first
   end
 end

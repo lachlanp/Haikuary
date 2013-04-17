@@ -25,11 +25,11 @@ class HaikuController < ApplicationController
     @haiku = Haiku.new(haiku_params)
     respond_to do |format|
       if @haiku.save
-        format.html {redirect_to root_path, notice: Haiku.all.sample.description}
+        format.html {redirect_to root_path, notice: Haiku.get_random.description}
         format.json {render json: @haiku}
       else
         format.html do
-          flash.now[:error] = Haiku.all.sample.description
+          flash.now[:error] = Haiku.get_random.description
           render :new
         end
         format.json { render json: @haiku }

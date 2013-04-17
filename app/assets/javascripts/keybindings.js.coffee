@@ -16,7 +16,7 @@ $ ->
 
   # Toggle show/hide hotkey hints
   window.mouseTrapRails =
-    showOnLoad: true           # Show/hide hotkey hints by default (on page load). Mostly for debugging purposes.
+    showOnLoad: false           # Show/hide hotkey hints by default (on page load). Mostly for debugging purposes.
     toggleKeys: 'alt+shift+h'   # Key sequence to toggle hints visibility.
     keysShown: true
     toggleHints:  ->
