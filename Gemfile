@@ -56,3 +56,6 @@ end
 
 # To use debugger
 # gem 'debugger'
+
+#keyboard shortcuts, yo
+gem 'mousetrap-rails'

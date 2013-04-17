@@ -123,6 +123,7 @@ GEM
     mime-types (1.21)
     minitest (4.7.0)
     modernizr-rails (2.6.2)
+    mousetrap-rails (0.0.9)
     multi_json (1.7.2)
     multipart-post (1.2.0)
     nokogiri (1.5.9)
@@ -224,6 +225,7 @@ DEPENDENCIES
   haml-rails
   jquery-rails
   modernizr-rails
+  mousetrap-rails
   pg
   quiet_assets
   rails (= 4.0.0.beta1)
