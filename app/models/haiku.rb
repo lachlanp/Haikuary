@@ -58,16 +58,19 @@ class Haiku < ActiveRecord::Base
   end
 
   def well_formed
-    framing = [5,7,5]
     description.split("\n").each_with_index do |line, index|
       count = dissect_line(line)
-      errors[:description] << "wrong number of syllables on line #{index+1}" if((framing[index] - count).abs > 1)
+      errors[:description] << "wrong number of syllables on line #{index+1}" if((valid_syllables_for_line(index) - count).abs > 1)
     end
   end
 
   def formation
     errors[:description] << "Please use 3 lines." unless description.lines.count >= 3
     errors[:description] << "Please use only 3 lines." unless description.lines.count <= 3
+  end
 
+  def valid_syllables_for_line(index)
+    framing = [5,7,5]
+    framing[index] || 0
   end
 end
