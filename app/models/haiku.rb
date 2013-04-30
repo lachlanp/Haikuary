@@ -1,6 +1,6 @@
 class Haiku < ActiveRecord::Base
   validate :word_count_less_than_18
-  validate :well_formed
+  # validate :well_formed
   # after_save :create_audio_file
   after_save :audio_file
   validates_presence_of :description
