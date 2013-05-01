@@ -20,9 +20,7 @@ class Haiku < ActiveRecord::Base
   # end
 
   def self.get_random
-    random_offset = rand(Haiku.count - 1)
-
-    Haiku.not_generated.offset(random_offset).limit(1).first
+    Haiku.not_generated.sample
   end
 
   def audio_file
