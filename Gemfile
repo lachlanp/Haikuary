@@ -59,3 +59,6 @@ end
 
 #keyboard shortcuts, yo
 gem 'mousetrap-rails'
+group :production do
+  gem 'rails_12factor'
+end
