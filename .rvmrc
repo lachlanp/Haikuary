@@ -1,1 +1,5 @@
-rvm use ruby-2.0.0-p0@haikuary --create
+rvm use ruby-2.0.0@haikuary --create
+export TWITTER_CONSUMER_KEY=GNwZY34f3B7UKiRu6OyA
+export TWITTER_CONSUMER_SECRET=NnZADHKXZw78b9O5ctsF2DeoUasi0vwhtRS2X70
+export TWITTER_OAUTH_TOKEN=1692194304-O2YfpLTovXhnQAyQpcIxvECNKaNF8u2OgOtxYyG
+export TWITTER_OAUTH_TOKEN_SECRET=DYikkTBuE4TCEficoPyuJWIzA8FjE0jtmEGDncu24U

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
-gem 'rails', "4.0.0.beta1"
+gem 'rails', "4.0.0"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -10,8 +10,8 @@ gem 'yaml_db', github: 'jetthoughts/yaml_db', branch: 'rails4'
 
 # Gems used only for assets and not required
 # in production environments by default.
-gem 'sass-rails', ">= 4.0.0.beta1"
-gem 'coffee-rails', ">= 4.0.0.beta1"
+gem 'sass-rails', ">= 4.0.0"
+gem 'coffee-rails', ">= 4.0.0"
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
 # gem 'compass-rails'
@@ -21,7 +21,7 @@ gem 'modernizr-rails'
 # gem 'therubyracer', :platforms => :ruby
 
 gem 'uglifier', '>= 1.0.3'
-
+gem 'twitter'
 gem 'google-api-client'
 gem 'jquery-rails'
 gem 'haml-rails'
