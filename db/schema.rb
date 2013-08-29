@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(version: 20130330070800) do
   enable_extension "plpgsql"
 
   create_table "haiku", force: true do |t|
-    t.datetime "created_at",                              null: false
-    t.datetime "updated_at",                              null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.string   "description"
     t.string   "author",          default: "Anonymously"
     t.string   "file_path"
