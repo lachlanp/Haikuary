@@ -1,4 +1,3 @@
-
 namespace :twitter do
   desc "Daily random tweet"
   task post_tweet: :environment do

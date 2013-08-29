@@ -1,4 +1,3 @@
-
 namespace :import do
   desc "import tweets with haikudetat hashtag"
   task twitter_haikudetat: :environment do
