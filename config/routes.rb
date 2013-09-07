@@ -1,9 +1,10 @@
 Haikuary::Application.routes.draw do
 
+  devise_for :users
   resources :haiku
 
   get 'random' => 'haiku#random'
-
+  get 'veto' => 'haiku#veto', method: :post, as: :veto_haiku
   root to: 'haiku#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.

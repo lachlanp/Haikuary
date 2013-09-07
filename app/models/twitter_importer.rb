@@ -8,7 +8,7 @@ class TwitterImporter
   def self.latest_tweets
     #filters links and RT
     since_id = Haiku.where("source_id IS NOT NULL").last
-    results = Twitter.search("#haiku OR #haikudetat", since_id: since_id, lang: "en").statuses
+    results = Twitter.search("#haikudetat OR #haiku", since_id: since_id, lang: "en", count: 50, retweeted: false).statuses
     tweets  = results.collect {|r| Tweet.parse(r)}.compact!
   end
 end
@@ -21,6 +21,7 @@ class Tweet
 
   def self.parse(result)
     return nil if result["text"].match(/(?:f|ht)tps?:\/[^\s]+/)
+    return nil if result["text"].match(/^RT/)
     Tweet.new({
       created_at: result[:created_at],
       user: result.from_user,

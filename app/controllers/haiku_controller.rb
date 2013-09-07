@@ -5,9 +5,10 @@ class HaikuController < ApplicationController
     if (params[:haiku] && Haiku.all.collect(&:author).include?(params[:haiku][:author]))
       @list_many_haiku = Haiku.where(author: params[:haiku][:author]).order('id DESC').page(params[:page]).per_page(20)
     else
-      @list_many_haiku = Haiku.order('id DESC').page(params[:page]).per_page(20)
+      @list_many_haiku = Haiku.not_generated.order('id DESC').page(params[:page]).per_page(20)
     end
     # @github_location = "http://github.rc/lachypoo/Haikuary/raw/master/public/haiku_audio/"
+    @list_many_haiku = @list_many_haiku.not_vetoed
   end
 
   def show
@@ -39,6 +40,12 @@ class HaikuController < ApplicationController
 
   def random
     @haiku = HaikuMaker.new.generate
+  end
+
+  def veto
+    haiku = Haiku.find(params[:id])
+    haiku.veto!
+    render "shared/success", locals: {notice: "Haiku vetoed successfully", id: haiku.id}
   end
 
   private

@@ -2,14 +2,14 @@ class Haiku < ActiveRecord::Base
   validate :word_count_less_than_18
   # validate :well_formed
   # after_save :create_audio_file
-  after_save :audio_file
+  after_create :audio_file
   validates_presence_of :description
   validates_length_of :description, minimum: 30, message: "Your Haiku is too short! Minimum 30 characters."
   validate :formation
   validates_uniqueness_of :description
 
   scope :not_generated, -> { where(Haiku.arel_table[:author].not_eq('Happy Haiku Bot')) }
-
+  scope :not_vetoed, -> { where("veto IS NOT true") }
   # def create_audio_file
   #   possible_path = "haiku_audio/#{self.id}.mp4"
   #   local_path = Rails.root + 'public/' + possible_path
@@ -20,7 +20,7 @@ class Haiku < ActiveRecord::Base
   # end
 
   def self.get_random
-    Haiku.not_generated.sample
+    Haiku.not_generated.not_vetoed.sample
   end
 
   def audio_file
@@ -32,6 +32,11 @@ class Haiku < ActiveRecord::Base
     description.split("\n").each_with_index.map do |line, index|
       dissect_line(line)
     end
+  end
+
+  def veto!
+    self.veto = true
+    self.save
   end
 
   def is_new_line_formatted?

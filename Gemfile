@@ -45,6 +45,8 @@ group :test, :development do
   gem "rspec-rails", ">= 2.11.0"
   gem "factory_girl_rails", ">= 4.0.0"
 end
+
+gem "devise", ">= 3.0.0"
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
