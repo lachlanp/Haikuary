@@ -1,5 +1,5 @@
 namespace :twitter do
-  desc "Daily random tweet"
+  desc "Hourly random tweet"
   task post_tweet: :environment do
     haiku = HaikuMaker.new.generate
     haiku.save
