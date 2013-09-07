@@ -21,7 +21,7 @@ class Tweet
 
   def self.parse(result)
     return nil if result["text"].match(/(?:f|ht)tps?:\/[^\s]+/)
-    return nil if result["text"].match(/^RT/)
+    return nil if result["text"].match(/^RT /)
     Tweet.new({
       created_at: result[:created_at],
       user: result.from_user,
