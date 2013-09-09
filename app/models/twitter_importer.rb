@@ -8,7 +8,7 @@ class TwitterImporter
   def self.latest_tweets
     #filters links and RT
     since_id = Haiku.where("source_id IS NOT NULL").last
-    results = Twitter.search("#haiku", since_id: since_id, lang: "en", count: 50, result_type: "recent").statuses
+    results = Twitter.search("#haiku", since_id: since_id, lang: "en", count: 70, result_type: "recent").statuses
     tweets  = results.collect {|r| Tweet.parse(r)}.compact!
   end
 

@@ -1,10 +1,10 @@
 class Haiku < ActiveRecord::Base
   validate :word_count_less_than_18
-  # validate :well_formed
+  validate :well_formed
   # after_save :create_audio_file
   after_create :audio_file
   validates_presence_of :description
-  validates_length_of :description, minimum: 30, message: "Your Haiku is too short! Minimum 30 characters."
+  # validates_length_of :description, minimum: 17, message: "Your Haiku is too short! Minimum 17 characters."
   validate :formation
   validates_uniqueness_of :description
 
@@ -63,6 +63,7 @@ class Haiku < ActiveRecord::Base
   def well_formed
     description.split("\n").each_with_index do |line, index|
       count = dissect_line(line)
+      debugger
       errors[:description] << "wrong number of syllables on line #{index+1}" if((valid_syllables_for_line(index) - count).abs > 1)
     end
   end
