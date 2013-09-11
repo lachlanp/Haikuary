@@ -33,3 +33,4 @@ pickle-email-*.html
 # ignore audio
 *.mp4
 *.sublime-workspace
+*/local_env.yml
