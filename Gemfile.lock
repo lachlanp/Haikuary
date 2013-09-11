@@ -7,9 +7,9 @@ GIT
 
 GIT
   remote: git://github.com/kelseymok/syllable_counter.git
-  revision: 7dc5e9f339afc02e947cac1be8e7e20bb4c884cc
+  revision: 033de6ceddaef800c0faac71181aaf6a260680d5
   specs:
-    syllable_counter (0.0.1)
+    syllable_counter (1.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -40,7 +40,7 @@ GEM
       tzinfo (~> 0.3.37)
     addressable (2.3.5)
     arel (4.0.0)
-    atomic (1.1.13)
+    atomic (1.1.14)
     autoparse (0.3.3)
       addressable (>= 2.3.1)
       extlib (>= 0.9.15)
@@ -120,12 +120,12 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mime-types (1.24)
+    mime-types (1.25)
     mini_portile (0.5.1)
     minitest (4.7.5)
     modernizr-rails (2.6.2.3)
     mousetrap-rails (0.0.11)
-    multi_json (1.7.9)
+    multi_json (1.8.0)
     multipart-post (1.2.0)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
@@ -149,7 +149,7 @@ GEM
       rails_serve_static_assets
       rails_stdout_logging
     rails_serve_static_assets (0.0.1)
-    rails_stdout_logging (0.0.1)
+    rails_stdout_logging (0.0.2)
     railties (4.0.0)
       actionpack (= 4.0.0)
       activesupport (= 4.0.0)
@@ -193,7 +193,7 @@ GEM
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
     thor (0.18.1)
-    thread_safe (0.1.2)
+    thread_safe (0.1.3)
       atomic
     tilt (1.4.1)
     treetop (1.4.15)
