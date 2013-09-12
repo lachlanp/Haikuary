@@ -19,7 +19,11 @@
     .content
       #messages
         = render 'layouts/errors' unless flash.nil?
-      = yield
+      -if devise_controller?
+        #loginbox
+          = yield
+      -else
+        = yield
 
     .footer
       = javascript_include_tag "application"

@@ -1,0 +1,11 @@
+- haiku = editable_haiku
+.pretty_haiku{class: "haiku_#{haiku.id}", id: "haiku_#{haiku.id}"}
+  .form_page
+    =simple_form_for haiku do |f|
+      =f.input :description, as: :text, input_html: {rows: 4}
+      .author
+        =haiku.author
+        =haiku.syllable_estimate
+      =f.submit class: "btn btn-primary"
+
+  =link_to "Convert", convert_bad_haiku_path(id: haiku), remote: true, class: "btn btn-success"
