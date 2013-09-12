@@ -60,7 +60,7 @@ class Tweet
     haiku.description = "#{@tweeted_haiku}"
     haiku.source_id = "#{@tweet_id}"
     haiku.author = @author
-    haiku.save
+    bad = BadHaiku.create(description: haiku.description, author: haiku.author, syllable_estimate: SyllableCounter::Count.new.get_syllables(haiku.description) ) unless haiku.save
   end
 
   def url
