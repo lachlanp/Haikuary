@@ -1,6 +1,6 @@
 class Haiku < ActiveRecord::Base
   validate :word_count_less_than_18
-  # validate :well_formed
+  validate :well_formed
   # after_save :create_audio_file
   after_create :audio_file
   validates_presence_of :description
@@ -57,13 +57,19 @@ class Haiku < ActiveRecord::Base
   end
 
   def dissect_line(line)
-    SyllableCounter.get_syllables(line)
+    SyllableCounter::Count.new.get_syllables(line)
   end
 
   def well_formed
     description.split("\n").each_with_index do |line, index|
       count = dissect_line(line)
-      errors[:description] << "wrong number of syllables on line #{index+1}" if((valid_syllables_for_line(index) - count).abs > 1)
+      if ((valid_syllables_for_line(index) - count).abs > 1)
+        errors[:description] << "wrong number of syllables on line #{index+1}"
+      end
+    end
+    if errors[:description].any?
+      bad = BadHaiku.new(description: description, author: author, syllable_estimate: SyllableCounter::Count.new.get_syllables(description) )
+      bad.save
     end
   end
 

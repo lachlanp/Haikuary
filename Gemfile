@@ -29,11 +29,17 @@ gem "will_paginate"
 gem "simple_form"
 gem "thin"
 gem "google-analytics-rails"
-gem "syllable_counter", github: "kelseymok/syllable_counter"
+gem "syllable_counter", github: "lachlanp/syllable_counter", branch: "request"
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 group :development do
   gem 'quiet_assets'
+  gem "debugger", :platforms => [:mingw_19, :ruby_19]
+  gem 'byebug', :platforms => [:mingw_20, :ruby_20]
+  gem 'pry-byebug', :platforms => [:mingw_20, :ruby_20]
+  gem 'pry-stack_explorer', :platforms => [:mingw_20, :ruby_20]
+  gem "better_errors"
+  gem 'binding_of_caller'
 end
 
 group :test do
