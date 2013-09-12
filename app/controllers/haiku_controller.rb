@@ -29,6 +29,7 @@ class HaikuController < ApplicationController
         format.html {redirect_to root_path, notice: Haiku.get_random.description}
         format.json {render json: @haiku}
       else
+        bad = BadHaiku.create(description: @haiku.description, author: @haiku.author, syllable_estimate: SyllableCounter::Count.new.get_syllables(@haiku.description) )
         format.html do
           flash.now[:error] = Haiku.get_random.description
           render :new

@@ -67,10 +67,6 @@ class Haiku < ActiveRecord::Base
         errors[:description] << "wrong number of syllables on line #{index+1}"
       end
     end
-    if errors[:description].any?
-      bad = BadHaiku.new(description: description, author: author, syllable_estimate: SyllableCounter::Count.new.get_syllables(description) )
-      bad.save
-    end
   end
 
   def formation
