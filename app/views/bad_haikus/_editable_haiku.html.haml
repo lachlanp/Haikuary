@@ -9,3 +9,4 @@
       =f.submit class: "btn btn-primary"
 
   =link_to "Convert", convert_bad_haiku_path(id: haiku), remote: true, class: "btn btn-success"
+  =link_to "Delete", bad_haiku_path(id: haiku), method: :delete, remote: true, class: "btn btn-danger"

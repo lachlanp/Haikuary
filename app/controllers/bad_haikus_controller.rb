@@ -14,8 +14,17 @@ class BadHaikusController < ApplicationController
 
   def convert
     bad = BadHaiku.find(params[:id])
-    haiku = Haiku.create(description: bad.description, author: bad.author)
+    haiku = Haiku.new(description: bad.description, author: bad.author)
+    if haiku.save
+      bad.destroy
+    end
     render "shared/success", locals: {notice: "Haiku successfully resubmitted", id: bad.id}
+  end
+
+  def destroy
+    bad = BadHaiku.find(params[:id])
+    bad.destroy
+    render "shared/success", locals: {notice: "Badhaiku successfully destroyed", id: bad.id}
   end
 
   private
