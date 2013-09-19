@@ -43,7 +43,7 @@ class Tweet
     @text = params[:tweet] || ""       # "#webstock woot!",
     #haikuify the tweet
     remove_url = @text.gsub(/(?:f|ht)tps?:\/[^\s]+/, '')
-    replace_slash_w_newline = remove_url.gsub("/", "\r\n")
+    replace_slash_w_newline = remove_url.gsub("/", "\r\n").gsub(/^.\n/, "")
     remove_hashtag_mention = replace_slash_w_newline.gsub( /[@#]\S+/, '' )
     replacing_newlines = remove_hashtag_mention.gsub(/[\r\n]+/, "\n")
     @tweeted_haiku = replacing_newlines.split("\n").reject do |line|
