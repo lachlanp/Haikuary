@@ -1,5 +1,6 @@
 Haikuary::Application.routes.draw do
 
+  get :ping, to: "application#ping"
   devise_for :users
   resources :haiku  do
     post :veto, on: :member

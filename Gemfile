@@ -4,7 +4,8 @@ gem 'rails', "4.0.0"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+gem 'unicorn'
+gem 'newrelic_rpm'
 gem 'pg'
 gem 'yaml_db', github: 'jetthoughts/yaml_db', branch: 'rails4'
 
