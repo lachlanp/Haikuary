@@ -1,6 +1,6 @@
 class BadHaiku < ActiveRecord::Base
   before_save :how_many_syllables
-  after_save :attempt_resubmit
+  after_update :attempt_resubmit
 
   def how_many_syllables
     self.syllable_estimate = SyllableCounter::Count.new.get_syllables(self.description)
@@ -9,6 +9,6 @@ class BadHaiku < ActiveRecord::Base
 
   def attempt_resubmit
     haiku = Haiku.new(author: author, description: description)
-    self.destroy if haiku.save
+    self.destroy
   end
 end
