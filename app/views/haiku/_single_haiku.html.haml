@@ -1,17 +1,18 @@
 .pretty_haiku{class: "haiku_#{single_haiku.id}", id: "haiku_#{single_haiku.id}"}
   .haiku=simple_format single_haiku.description
   .author  -  #{single_haiku.author}
+  / =link_to "Show", haiku_url
 
 
   -haiku_url = single_haiku.persisted? ? "#{root_url}haiku/#{single_haiku.id}" : "#{root_url}"
-  -if single_haiku.haiku_url_cache.present?
-    %audio{ controls: "controls"}
-      %source{ src: single_haiku.haiku_url_cache }
-  -elsif single_haiku.persisted?
-    .profile-block-haiku
-      %p Alex can't read me,
-      %p this poem must sit mutely;
-      %p Blame speech synthesis
+  / -if single_haiku.haiku_url_cache.present?
+  /   %audio{ controls: "controls"}
+  /     %source{ src: single_haiku.haiku_url_cache }
+  / -elsif single_haiku.persisted?
+  /   .profile-block-haiku
+  /     %p Alex can't read me,
+  /     %p this poem must sit mutely;
+  /     %p Blame speech synthesis
 
   %a.twitter-share-button{"data-lang" => "en", "data-count" => "none", "data-text" => "#{twitter_description(single_haiku)} - #{single_haiku.author} ", "data-url" => "#{haiku_url}",  "data-hashtags" => "haikudetat", :href => "https://twitter.com/share"} Tweet
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

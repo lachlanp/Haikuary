@@ -2,7 +2,7 @@ class Haiku < ActiveRecord::Base
   validate :word_count_less_than_18
   validate :well_formed
   # after_save :create_audio_file
-  after_create :audio_file
+  # after_create :audio_file
   validates_presence_of :description
   # validates_length_of :description, minimum: 17, message: "Your Haiku is too short! Minimum 17 characters."
   validate :formation
