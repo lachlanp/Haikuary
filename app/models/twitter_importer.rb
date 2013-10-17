@@ -46,7 +46,7 @@ class Tweet
     replace_slash_w_newline = remove_url.gsub("/", "\r\n").gsub(/^.\n/, "")
     remove_hashtag_mention = replace_slash_w_newline.gsub( /[@#]\S+/, '' )
     replacing_newlines = remove_hashtag_mention.gsub(/[\r\n]+/, "\n")
-    removing_tildes = replacing_newlines.gsub(/^~ /, "")
+    removing_tildes = replacing_newlines.gsub(/^~ /, "").gsub(/^ /, "")
     @tweeted_haiku = removing_tildes.split("\n").reject do |line|
       line =~ /\A\s+\z/
     end.join "\n"
