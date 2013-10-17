@@ -1,11 +1,6 @@
-<% if user_signed_in? %>
-  $('#haiku').append("<%= j render partial: 'editable_haiku', collection: @list_many_haiku %>");
-<% else %>
-  $('#haiku').append("<%= j render partial: 'single_haiku', collection: @list_many_haiku %>");
-<% end %>
-<% if @list_many_haiku.next_page %>
-  $('.pagination').replaceWith('<%= j will_paginate(@list_many_haiku) %>');
+$('#collection').append("<%= j render partial: 'partial', collection: @collection %>");
+<% if @collection.next_page %>
+  $('.pagination').replaceWith('<%= j will_paginate(@collection) %>');
 <% else %>
   $('.pagination').remove();
 <% end %>
-window.twttr && window.twttr.widgets.load();
