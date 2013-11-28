@@ -35,3 +35,4 @@ pickle-email-*.html
 *.sublime-workspace
 */local_env.yml
 .DS_Store
+*.dump
