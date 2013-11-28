@@ -11,8 +11,8 @@ gem 'yaml_db', github: 'jetthoughts/yaml_db', branch: 'rails4'
 
 # Gems used only for assets and not required
 # in production environments by default.
-gem 'sass-rails', ">= 4.0.0"
-gem 'coffee-rails', ">= 4.0.0"
+gem 'sass-rails', "~> 4.0.0"
+gem 'coffee-rails', "~> 4.0.0"
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
 # gem 'compass-rails'
