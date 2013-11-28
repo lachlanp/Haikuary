@@ -1,0 +1,8 @@
+=render partial: "form"
+#haiku
+  -if user_signed_in?
+    = render partial: "haiku/editable_haiku", collection: @list_many_haiku
+  -else
+    = render partial: "haiku/single_haiku", collection: @list_many_haiku
+-if @list_many_haiku.respond_to?(:total_pages)
+  =will_paginate @list_many_haiku
