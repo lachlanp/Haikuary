@@ -22,7 +22,7 @@ gem 'modernizr-rails'
 # gem 'therubyracer', :platforms => :ruby
 
 gem 'uglifier', '>= 1.0.3'
-gem 'twitter'
+gem 'twitter', "~> 4.8.1"
 gem 'google-api-client'
 gem 'jquery-rails'
 gem 'haml-rails'
