@@ -1,0 +1,4 @@
+= simple_form_for :search, url: searches_path, method: :get, html: {class: "search"} do |f|
+  =select_tag :type, options_for_select([['Content', :content], ['User', :user]])
+  =label_tag :q, "contains"
+  =text_field_tag :q, params[:q]

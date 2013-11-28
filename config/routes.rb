@@ -8,6 +8,9 @@ Haikuary::Application.routes.draw do
   resources :bad_haikus do
     get :convert, on: :member
   end
+
+  resources :searches, only: :index, path: 'search'
+
   get 'random' => 'haiku#random'
   root to: 'haiku#index'
   # The priority is based upon order of creation:
