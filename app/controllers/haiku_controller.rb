@@ -2,8 +2,12 @@ class HaikuController < ApplicationController
   before_filter :lets_init_haiku, only: [ :show ]
 
   def index
-    @list_many_haiku = Haiku.not_generated.page(params[:page]).per_page(20)
-    @list_many_haiku = @list_many_haiku.not_vetoed
+    @list_many_haiku = begin
+      Haiku.not_generated
+           .order(id: :desc)
+           .page(params[:page])
+           .per_page(20)
+    end
   end
 
   def show
