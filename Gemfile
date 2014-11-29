@@ -1,18 +1,16 @@
 source 'https://rubygems.org'
-ruby '2.1.0'
-gem 'rails', "4.0.3"
+ruby '2.1.5'
+gem 'rails', "4.1.8"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'unicorn'
-gem 'newrelic_rpm'
 gem 'pg'
-gem 'yaml_db', github: 'jetthoughts/yaml_db', branch: 'rails4'
 
 # Gems used only for assets and not required
 # in production environments by default.
-gem 'sass-rails', "~> 4.0.0"
-gem 'coffee-rails', "~> 4.0.0"
+gem 'sass-rails', ">= 4.0.0"
+gem 'coffee-rails', ">= 4.0.0"
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
 # gem 'compass-rails'
@@ -31,16 +29,11 @@ gem "simple_form"
 gem "thin"
 gem "google-analytics-rails"
 gem "syllable_counter", github: "lachlanp/syllable_counter", branch: "request"
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+
 group :development do
   gem 'quiet_assets'
-  gem "debugger", :platforms => [:mingw_19, :ruby_19]
   gem 'byebug', :platforms => [:mingw_20, :ruby_20]
-  gem 'pry-byebug', :platforms => [:mingw_20, :ruby_20]
-  gem 'pry-stack_explorer', :platforms => [:mingw_20, :ruby_20]
   gem "better_errors"
-  gem 'binding_of_caller'
 end
 
 group :test do
@@ -63,7 +56,6 @@ gem "devise", ">= 3.0.0"
 # gem 'capistrano'
 
 #keyboard shortcuts, yo
-gem 'mousetrap-rails'
 group :production do
   gem 'rails_12factor'
 end

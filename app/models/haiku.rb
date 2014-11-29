@@ -1,23 +1,12 @@
 class Haiku < ActiveRecord::Base
   validate :word_count_less_than_18
   validate :well_formed
-  # after_save :create_audio_file
-  # after_create :audio_file
-  validates_presence_of :description
-  # validates_length_of :description, minimum: 17, message: "Your Haiku is too short! Minimum 17 characters."
+  validates :description, presence: true, uniqueness: true
   validate :formation
   validates_uniqueness_of :description
 
-  scope :not_generated, -> { where(Haiku.arel_table[:author].not_eq('Happy Haiku Bot')) }
-  scope :not_vetoed, -> { where("veto IS NOT true") }
-  # def create_audio_file
-  #   possible_path = "haiku_audio/#{self.id}.mp4"
-  #   local_path = Rails.root + 'public/' + possible_path
-  #   `say "#{self.description}" -o #{local_path}`
-  #   if File.size(local_path) > 10000
-  #     self.update_column(:file_path, possible_path)
-  #   end
-  # end
+  scope :not_generated, -> { where.not(author: 'Happy Haiku Bot') }
+  scope :not_vetoed, -> { where.not(veto: true) }
 
   def self.get_random
     Haiku.not_generated.not_vetoed.sample
@@ -43,7 +32,8 @@ class Haiku < ActiveRecord::Base
     self.description.lines.count >= 3
   end
 
-  private
+private
+
   def word_count_less_than_18
     errors[:description] << "too many words" if description.split.size > 17
   end

@@ -2,12 +2,7 @@ class HaikuController < ApplicationController
   before_filter :lets_init_haiku, only: [ :show ]
 
   def index
-    if (params[:haiku] && Haiku.all.collect(&:author).include?(params[:haiku][:author]))
-      @list_many_haiku = Haiku.where(author: params[:haiku][:author]).order('id DESC').page(params[:page]).per_page(20)
-    else
-      @list_many_haiku = Haiku.not_generated.order('id DESC').page(params[:page]).per_page(20)
-    end
-    # @github_location = "http://github.rc/lachypoo/Haikuary/raw/master/public/haiku_audio/"
+    @list_many_haiku = Haiku.not_generated.page(params[:page]).per_page(20)
     @list_many_haiku = @list_many_haiku.not_vetoed
   end
 
@@ -29,7 +24,7 @@ class HaikuController < ApplicationController
         format.html {redirect_to root_path, notice: Haiku.get_random.description}
         format.json {render json: @haiku}
       else
-        bad = BadHaiku.create(description: @haiku.description, author: @haiku.author)
+        BadHaiku.create(description: @haiku.description, author: @haiku.author)
         format.html do
           flash.now[:error] = Haiku.get_random.description
           render :new
@@ -49,10 +44,10 @@ class HaikuController < ApplicationController
     render "shared/success", locals: {notice: "Haiku vetoed successfully", id: haiku.id}
   end
 
-  private
+private
 
   def lets_init_haiku
-    @single_haiku = Haiku.find_by_id(params[:id])
+    @single_haiku = Haiku.find_by(id: params[:id])
   end
 
   def haiku_params
