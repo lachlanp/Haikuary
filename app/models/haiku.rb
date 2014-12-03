@@ -6,10 +6,9 @@ class Haiku < ActiveRecord::Base
   validates_uniqueness_of :description
 
   scope :not_generated, -> { where.not(author: 'Happy Haiku Bot') }
-  scope :not_vetoed, -> { where.not(veto: true) }
 
   def self.get_random
-    Haiku.not_generated.not_vetoed.sample
+    Haiku.not_generated.sample
   end
 
   def audio_file
