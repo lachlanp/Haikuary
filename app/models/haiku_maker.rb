@@ -17,8 +17,9 @@ class HaikuMaker
   def get_haiku_list
     return @haiku_list if @haiku_list.present?
     haiku_list = []
+    size = Haiku.count
     while haiku_list.count < 3 do
-      haiku = Haiku.get_random
+      haiku = Haiku.not_generated.find(rand(size))
       haiku_list << haiku if haiku && haiku.is_new_line_formatted?
     end
     haiku_list
