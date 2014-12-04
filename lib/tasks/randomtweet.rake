@@ -3,7 +3,7 @@ namespace :twitter do
   task post_tweet: :environment do
     haiku = HaikuMaker.new.generate
     if haiku.valid?
-      Twitter.update(haiku.description)
+	  Twitter::Session.new.client.update(haiku.description)
     else
       Rake::Task["twitter:post_tweet"].invoke
     end
