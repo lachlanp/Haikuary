@@ -19,10 +19,6 @@
     .content
       #messages
         = render 'layouts/errors' unless flash.nil?
-      -if devise_controller?
-        #loginbox
-          = yield
-      -else
         = yield
 
     .footer
