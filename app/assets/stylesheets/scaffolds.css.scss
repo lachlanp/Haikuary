@@ -39,7 +39,7 @@
   border:thin grey solid;
   padding:10px;
   @include border-radius(5px);
-  background:url("/grey_@2X.png") repeat;
+  background: white url("/grey_@2X.png") repeat;
 }
 
 .profile-block-haiku {
@@ -54,7 +54,7 @@
 
 
 .pretty_haiku {
-  background:url("/grey_@2X.png") repeat;
+  background: white url("/grey_@2X.png") repeat;
   border:thin grey solid;
   padding:10px;
   @include border-radius(5px);
@@ -114,11 +114,11 @@
 }
 
 body {
-  background:url("/black_@2X.png") repeat fixed;
+  background: rgb(30,30,30) url("/black_@2X.png") repeat fixed;
 }
 
 .navbar-top, .navbar-inner {
-  background:url("/low_contrast_linen_@2X.png") repeat;
+  background: rgb(30,30,30) url("/low_contrast_linen_@2X.png") repeat;
   border:none;
   @include border-radius(0);
 }
