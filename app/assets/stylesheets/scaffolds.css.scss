@@ -102,6 +102,7 @@
     display:block;
   }
   #haiku_author {
+    max-width: 100%;
     margin:20px auto;
     display:block;
     padding:10px;
@@ -162,12 +163,6 @@ audio {
   margin:10px auto;
   padding:10px;
   // @include border-radius(5px);
-}
-.twitter-share-button {
-  display:block;
-  position:absolute;
-  top:5px;
-  right:5px;
 }
 
 p {

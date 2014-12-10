@@ -28,7 +28,6 @@ class HaikuController < ApplicationController
         format.html {redirect_to root_path, notice: Haiku.get_random.description}
         format.json {render json: @haiku}
       else
-        BadHaiku.create(description: @haiku.description, author: @haiku.author)
         format.html do
           flash.now[:error] = Haiku.get_random.description
           render :new
@@ -40,12 +39,7 @@ class HaikuController < ApplicationController
 
   def random
     @haiku = HaikuMaker.new.generate
-  end
-
-  def veto
-    haiku = Haiku.find(params[:id])
-    haiku.veto!
-    render "shared/success", locals: {notice: "Haiku vetoed successfully", id: haiku.id}
+    @haiku ||= Haiku.new(description: "Empty database\nWhat happened to me, I'm lost\n without my data.")
   end
 
 private

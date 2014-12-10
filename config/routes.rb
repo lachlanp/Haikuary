@@ -1,17 +1,12 @@
 Haikuary::Application.routes.draw do
 
   get :ping, to: "application#ping"
-  devise_for :users
   resources :haiku  do
-    post :veto, on: :member
-  end
-  resources :bad_haikus do
-    get :convert, on: :member
+    get :random, on: :collection
   end
 
   resources :searches, only: :index, path: 'search'
 
-  get 'random' => 'haiku#random'
   root to: 'haiku#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.

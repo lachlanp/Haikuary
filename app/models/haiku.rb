@@ -22,11 +22,6 @@ class Haiku < ActiveRecord::Base
     end
   end
 
-  def veto!
-    self.veto = true
-    self.save
-  end
-
   def is_new_line_formatted?
     self.description.lines.count >= 3
   end

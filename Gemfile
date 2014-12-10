@@ -21,12 +21,10 @@ gem 'modernizr-rails'
 
 gem 'uglifier', '>= 1.0.3'
 gem 'twitter'
-gem 'google-api-client'
 gem 'jquery-rails'
 gem 'haml-rails'
 gem "will_paginate"
 gem "simple_form"
-gem "thin"
 gem "google-analytics-rails"
 gem "syllable_counter", github: "lachlanp/syllable_counter", branch: "request"
 
@@ -45,7 +43,6 @@ group :test, :development do
   gem "factory_girl_rails", ">= 4.0.0"
 end
 
-gem "devise", ">= 3.0.0"
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
