@@ -61,7 +61,6 @@ class Tweet
     haiku.description = "#{@tweeted_haiku}"
     haiku.source_id = "#{@tweet_id}"
     haiku.author = @author
-    bad = BadHaiku.create(description: haiku.description, author: haiku.author) unless haiku.save
   end
 
   def url

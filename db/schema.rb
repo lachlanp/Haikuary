@@ -11,19 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141210001559) do
+ActiveRecord::Schema.define(version: 20141210002901) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "bad_haiku", force: true do |t|
-    t.string   "author"
-    t.string   "description"
-    t.integer  "syllable_estimate"
-    t.boolean  "converted"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "haiku", force: true do |t|
     t.datetime "created_at"
