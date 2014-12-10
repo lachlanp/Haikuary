@@ -3,7 +3,6 @@
 
   .haiku=simple_format single_haiku.description
   .author  -  #{single_haiku.author}
-  =link_to "Veto", veto_haiku_path(id: single_haiku), remote: true
 
   -haiku_url = single_haiku.persisted? ? "#{root_url}haiku/#{single_haiku.id}" : "#{root_url}"
   =link_to "Show", haiku_url

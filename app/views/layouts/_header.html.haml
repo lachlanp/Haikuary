@@ -1,10 +1,8 @@
 .navbar-top
   .navbar-inner
-    = link_to "Haiku d'etat", root_path, class: "page_title", data: {keybinding: 'ctrl+alt+h'}
-    / %audio.rainy{ controls: "controls", loop: "loop"}
-    /   %source{ src: "/Rain.mp3"}
+    = link_to "Haiku d'etat", root_path, class: "page_title"
     .haiku-left
-      = link_to "Generate Random Haiku", random_path, class: "btn btn-info", data: {keybinding: 'ctrl+alt+g'}
+      = link_to "Generate Random Haiku", random_haiku_index_path, class: "btn btn-info"
     .haiku-right
-      = link_to "Create a Haiku", new_haiku_path, class: "btn btn-primary", data: {keybinding: 'ctrl+alt+k'}
+      = link_to "Create a Haiku", new_haiku_path, class: "btn btn-primary"
 
