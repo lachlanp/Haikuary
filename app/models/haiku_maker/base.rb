@@ -44,7 +44,7 @@ module HaikuMaker
     end
 
     def random_haiku
-      scope.find(random_id)
+      scope.find_by(id: random_id)
     end
 
     def fill_quota(haikus)
