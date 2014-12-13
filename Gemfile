@@ -29,6 +29,7 @@ gem "google-analytics-rails"
 gem "syllable_counter", github: "lachlanp/syllable_counter", branch: "request"
 
 gem "wordnik"
+gem "engtagger"
 gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets', branch: 'master'
 
 group :development do
