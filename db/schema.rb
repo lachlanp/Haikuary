@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20141213054348) do
     t.string   "description"
     t.string   "author",      default: "Anonymously"
     t.string   "source_id"
-    t.text     "tags",                                array: true
+    t.text     "tags",        default: [],            array: true
   end
 
 end
