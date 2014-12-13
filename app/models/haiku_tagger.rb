@@ -1,12 +1,19 @@
 class HaikuTagger
   attr_accessor :haiku
 
-  def initialize(haiku)
+  def initialize(haiku, force = nil)
     @haiku = haiku
+    @force = force
   end
 
   def tag_haiku
-    haiku.tags = get_tags if get_tags.any?
+    if get_tags.any?
+      if @force
+        haiku.update_column(:tags, get_tags)
+      else
+        haiku.tags = get_tags
+      end
+    end
   end
 
 private

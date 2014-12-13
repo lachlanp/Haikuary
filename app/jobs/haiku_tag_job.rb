@@ -13,6 +13,6 @@ private
   end
 
   def tag_haiku(h)
-    HaikuTagger.new(h).tag_haiku
+    HaikuTagger.new(h, true).tag_haiku
   end
 end
