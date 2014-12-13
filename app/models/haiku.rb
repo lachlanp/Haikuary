@@ -11,11 +11,6 @@ class Haiku < ActiveRecord::Base
     Haiku.not_generated.sample
   end
 
-  def audio_file
-    @audio = `curl "http://tts-api.com/tts.mp3?q=#{self.description.gsub(/[\n\r]/," ").gsub(";",":").split().join("+")}&return_url=1"`
-    self.update_column(:haiku_url_cache, @audio)
-  end
-
   def dissect
     description.split("\n").each_with_index.map do |line, index|
       dissect_line(line)

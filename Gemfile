@@ -34,8 +34,9 @@ gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets', branch: 'master'
 
 group :development do
   gem 'quiet_assets'
-  gem 'byebug', :platforms => [:mingw_20, :ruby_20]
-  gem "better_errors"
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'pry-rails'
 end
 
 group :test do
