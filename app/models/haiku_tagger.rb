@@ -6,7 +6,7 @@ class HaikuTagger
   end
 
   def tag_haiku
-    haiku.update_column(:tags, get_tags) if get_tags.any?
+    haiku.tags = get_tags if get_tags.any?
   end
 
 private

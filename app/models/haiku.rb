@@ -4,7 +4,7 @@ class Haiku < ActiveRecord::Base
   validates :description, presence: true, uniqueness: true
   validate :formation
   validates_uniqueness_of :description
-
+  before_save :tag_haiku
   scope :not_generated, -> { where.not(author: 'Happy Haiku Bot') }
 
   def self.get_random
@@ -22,6 +22,10 @@ class Haiku < ActiveRecord::Base
   end
 
 private
+
+  def tag_haiku
+    HaikuTagger.new(self).tag_haiku
+  end
 
   def word_count_less_than_18
     errors[:description] << "too many words" if description.split.size > 17

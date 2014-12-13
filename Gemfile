@@ -32,6 +32,8 @@ gem "wordnik"
 gem "engtagger"
 gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets', branch: 'master'
 
+gem 'sidekiq'
+
 group :development do
   gem 'quiet_assets'
   gem 'better_errors'
