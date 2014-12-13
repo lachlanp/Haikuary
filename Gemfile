@@ -28,6 +28,9 @@ gem "simple_form"
 gem "google-analytics-rails"
 gem "syllable_counter", github: "lachlanp/syllable_counter", branch: "request"
 
+gem "wordnik"
+gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets', branch: 'master'
+
 group :development do
   gem 'quiet_assets'
   gem 'byebug', :platforms => [:mingw_20, :ruby_20]

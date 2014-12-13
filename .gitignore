@@ -27,12 +27,10 @@ capybara-*.html
 /coverage/
 /spec/tmp/*
 **.orig
-rerun.txt
-pickle-email-*.html
 
-# ignore audio
-*.mp4
 *.sublime-workspace
 */local_env.yml
 .DS_Store
 *.dump
+
+config/secrets.yml
