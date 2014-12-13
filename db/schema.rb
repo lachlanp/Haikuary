@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141210002901) do
+ActiveRecord::Schema.define(version: 20141213032332) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,9 +20,7 @@ ActiveRecord::Schema.define(version: 20141210002901) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "description"
-    t.string   "author",          default: "Anonymously"
-    t.string   "file_path"
-    t.string   "haiku_url_cache"
+    t.string   "author",      default: "Anonymously"
     t.string   "source_id"
   end
 
