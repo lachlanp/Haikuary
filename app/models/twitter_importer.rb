@@ -1,22 +1,27 @@
 class TwitterImporter
   require 'open-uri'
+  attr_accessor :client
 
-  def self.dummy_results
-    tweets = client.search('twitter', since_id: "0")
+  def initialize
+    @client = Twitter::Session.new.client
   end
 
-  def self.latest_tweets
-    #filters links and RT
-    since_id = Haiku.where("source_id IS NOT NULL").last
-    results = client.search("#haiku", since_id: since_id, lang: "en", count: 70, result_type: "recent").statuses
+  def latest_tweets
+    fetch_tweets_by_hashtag("#haiku")
+  end
+
+  def latest_coups
+    fetch_tweets_by_hashtag("#haikudetat")
+  end
+
+private
+  def fetch_tweets_by_hashtag(hashtag)
+    results = client.search(hashtag, since_id: since_id, lang: "en", result_type: "recent").take(100).map(&:text)
     tweets  = results.collect {|r| Tweet.parse(r)}.compact!
   end
 
-  def self.latest_coups
-    #filters links and RT
-    since_id = Haiku.where("source_id IS NOT NULL").last
-    results = client.search("#haikudetat", since_id: since_id, lang: "en", count: 50, result_type: "recent").statuses
-    tweets  = results.collect {|r| Tweet.parse(r)}.compact!
+  def since_id
+    Haiku.where("source_id IS NOT NULL").last
   end
 end
 
@@ -69,9 +74,5 @@ class Tweet
 
   def to_s()
     "@#{@author}: #{@tweeted_haiku}\n" + "  #{self.url}\n"
-  end
-
-  def client
-    Twitter::Session.new.client
   end
 end
