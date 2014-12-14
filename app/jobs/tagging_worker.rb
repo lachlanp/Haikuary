@@ -12,6 +12,6 @@ class TaggingWorker
 private
 
   def ids
-    Haiku.pluck(:id).each_slice(1000)
+    Haiku.where(tags: '{}').pluck(:id).each_slice(1000)
   end
 end
