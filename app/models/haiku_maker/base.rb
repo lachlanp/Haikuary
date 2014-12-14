@@ -50,8 +50,8 @@ module HaikuMaker
     end
 
     def fill_quota(haikus)
-      if haikus.length == 3
-        haikus
+      if haikus.length >= 3
+        haikus.first(3)
       else
         haikus << random_haiku
         fill_quota(haikus)
