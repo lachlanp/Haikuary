@@ -62,4 +62,5 @@ end
 #keyboard shortcuts, yo
 group :production do
   gem 'rails_12factor'
+  gem 'heroku_rails_deflate'
 end
