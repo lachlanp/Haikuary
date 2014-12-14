@@ -11,19 +11,16 @@ module HaikuMaker
 
     def description
       haikus = find_three_haiku
-      lines = [0,1,2].map do |index|
+      description = [0,1,2].map do |index|
         lines = haikus.map{ |haiku| haiku.description.lines[index] }
         resolve_line(lines)
-      end.flatten
-      reformat(lines)
+      end.flatten.join
+      reformat(description)
     end
 
-    def reformat(lines)
-      lines.map do |line|
-        line.strip.gsub("\n", "").gsub("\r\n", "").gsub("\"", "")
-      end.join("\r\n")
+    def reformat(description)
+      HaikuParser.new(description)
     end
-
 
     def resolve_line(lines)
       lines.select{ |line| line.downcase.include?(word) }.sample || lines.sample
