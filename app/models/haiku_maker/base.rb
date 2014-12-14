@@ -34,11 +34,13 @@ module HaikuMaker
       5.times do
         @ids << random_id
       end
+      @ids
     end
 
     def random_haikus
       @random_haikus ||= begin
-        scope.where(id: random_ids).limit(10)
+        scope.where(id: random_ids)
+             .limit(10)
              .select{ |h| h.is_new_line_formatted? }
       end
     end
