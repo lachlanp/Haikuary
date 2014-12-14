@@ -18,7 +18,14 @@ module HaikuMaker
 
     def description
       haikus = find_three_haiku
-      description = haikus[0].description.lines[0] + haikus[1].description.lines[1] + haikus[2].description.lines[2]
+      description = [0, 1, 2].map do |index|
+        haikus[index].description.lines[index]
+      end.flatten.join
+      reformat(description)
+    end
+
+    def reformat(description)
+      HaikuParser.new(description)
     end
 
     def total
@@ -41,7 +48,6 @@ module HaikuMaker
       @random_haikus ||= begin
         scope.where(id: random_ids)
              .limit(10)
-             .select{ |h| h.is_new_line_formatted? }
       end
     end
 
