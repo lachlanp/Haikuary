@@ -28,7 +28,7 @@ class Tweet
 private
 
   def reformat_text(text)
-    HaikuParser.new(text)
+    HaikuParser.new(text).text
   end
 
   def url

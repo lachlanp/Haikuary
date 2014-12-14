@@ -38,7 +38,7 @@ class HaikuController < ApplicationController
   end
 
   def random
-    @haiku = HaikuMaker::Base.new
+    @haiku = HaikuMaker::Base.new.result
     @haiku ||= Haiku.new(description: "Empty database\nWhat happened to me, I'm lost\n without my data.")
   end
 

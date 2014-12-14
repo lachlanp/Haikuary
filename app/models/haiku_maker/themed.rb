@@ -19,7 +19,7 @@ module HaikuMaker
     end
 
     def reformat(description)
-      HaikuParser.new(description)
+      HaikuParser.new(description).text
     end
 
     def resolve_line(lines)
