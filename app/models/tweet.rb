@@ -18,9 +18,9 @@ class Tweet
   def save_haiku()
     haiku = Haiku.where(source_id: "#{@tweet_id}").first_or_initialize
     haiku.update_attributes(
-      description: "#{text}"
-      created_at: created_at
-      source_id: tweet_id.to_s
+      description: "#{text}",
+      created_at: created_at,
+      source_id: tweet_id.to_s,
       author: author
     )
   end
