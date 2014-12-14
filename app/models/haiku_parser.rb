@@ -10,9 +10,9 @@ private
   def reformat
     remove_url
     remove_hashtag_mention
-    reformat_lines
-    removing_tildes
+    whitelist_punctuation
     rejoin_lines
+    reformat_lines
   end
 
   def remove_url
@@ -27,8 +27,8 @@ private
     @text = text.gsub( /[@#]\S+/, '' )
   end
 
-  def removing_tildes
-    @text = text.gsub(/^~ /, "").gsub(/^ /, "")
+  def whitelist_punctuation
+    @text = text.gsub(/[^\w\s',\-!?. ]/i, '')
   end
 
   def rejoin_lines

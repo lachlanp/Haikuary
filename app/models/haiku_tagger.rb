@@ -35,6 +35,10 @@ private
   end
 
   def text
-    text = tagger.add_tags(haiku.description.downcase)
+    text = tagger.add_tags(clean_text)
+  end
+
+  def clean_text
+    haiku.description.downcase.gsub(/[^\w\s',\-!?. ]/i, '')
   end
 end
