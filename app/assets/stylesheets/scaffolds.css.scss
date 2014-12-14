@@ -39,7 +39,9 @@
   border:thin grey solid;
   padding:10px;
   @include border-radius(5px);
-  background: white url("/grey_@2X.png") repeat;
+  background: white;
+  background-image:  url("/grey_@2X.png");
+  background-repeat: repeat;
 }
 
 .profile-block-haiku {
@@ -54,7 +56,9 @@
 
 
 .pretty_haiku {
-  background: white url("/grey_@2X.png") repeat;
+  background: white;
+  background-image:  url("/grey_@2X.png");
+  background-repeat: repeat;
   border:thin grey solid;
   padding:10px;
   @include border-radius(5px);
@@ -114,11 +118,16 @@
 }
 
 body {
-  background: rgb(30,30,30) url("/black_@2X.png") repeat fixed;
+  background: rgb(30,30,30);
+  background-image: url("/black_@2X.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 .navbar-top, .navbar-inner {
-  background: rgb(30,30,30) url("/low_contrast_linen_@2X.png") repeat;
+  background: rgb(30,30,30);
+  background-image: url("/low_contrast_linen_@2X.png");
+  background-repeat: repeat;
   border:none;
   @include border-radius(0);
 }
