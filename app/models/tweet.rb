@@ -1,11 +1,11 @@
 class Tweet
-  def self.parse(result)
-    return nil if result["text"].match(/(?:f|ht)tps?:\/[^\s]+/)
-    return nil if result["text"].match(/^RT /)
+  def self.parse(tweet)
+    return nil if tweet.text.match(/(?:f|ht)tps?:\/[^\s]+/)
+    return nil if tweet.text.match(/^RT /)
     Tweet.new({
-      user: result.from_user,
-      tweet: result.text,
-      tweet_id: result.id,
+      user: tweet.user.name,
+      tweet: tweet.text,
+      tweet_id: tweet.id,
     })
   end
 
@@ -13,13 +13,13 @@ class Tweet
 
   def initialize(params)
     @params = params
+    @text = params[:tweet]
   end
 
-  def save_haiku()
+  def save_haiku
     haiku = Haiku.where(source_id: "#{@tweet_id}").first_or_initialize
     haiku.update_attributes(
-      description: "#{text}",
-      created_at: created_at,
+      description: reformat_text(text),
       source_id: tweet_id.to_s,
       author: author
     )
@@ -42,4 +42,5 @@ private
   def tweet_id
     params[:tweet_id] || 0
   end
+
 end

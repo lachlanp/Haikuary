@@ -16,7 +16,7 @@ class TwitterImporter
 
 private
   def fetch_tweets_by_hashtag(hashtag)
-    results = client.search(hashtag, since_id: since_id, lang: "en", result_type: "recent").take(100).map(&:text)
+    results = client.search(hashtag, since_id: since_id, lang: "en", result_type: "recent").take(100)
     tweets  = results.collect {|r| Tweet.parse(r)}.compact!
   end
 
