@@ -33,7 +33,7 @@ module HaikuMaker
     end
 
     def random_id
-      rand(total).to_i
+      rand(total).to_i + 1
     end
 
     def random_ids
