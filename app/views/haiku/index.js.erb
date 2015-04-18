@@ -1,6 +1,0 @@
-$('#haiku').append("<%= j render partial: 'single_haiku', collection: @list_many_haiku %>");
-<% if @list_many_haiku.next_page %>
-  $('.pagination').replaceWith('<%= j will_paginate(@list_many_haiku) %>');
-<% else %>
-   $('.pagination').remove();
- <% end %>

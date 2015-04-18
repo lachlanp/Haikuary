@@ -1,0 +1,13 @@
+<div id="haiku">
+  <%= render partial: "haiku", locals: { haiku: @haiku } %>
+</div>
+
+<div class="form_page">
+  <%= simple_form_for @haiku, url: haikus_path do |f| %>
+    <div class="hide">
+      <%=f.input :description, as: :text, input_html: {rows: 3} %>
+      <%=f.input :author, as: :hidden %>
+    </div>
+    <%=f.submit "Submit magic haiku", class: "btn btn-primary center" %>
+  <% end %>
+</div>

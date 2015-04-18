@@ -1,0 +1,8 @@
+<div id="haikus">
+  <%= render partial: "haikus/haiku", collection: @haikus %>
+</div>
+<% if @haikus.respond_to?(:total_pages) %>
+  <div class="center">
+    <%= will_paginate @haikus %>
+  </div>
+<% end %>

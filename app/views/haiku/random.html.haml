@@ -1,8 +1,0 @@
-#haiku
-  = render partial: "single_haiku", object: @haiku
-.form_page
-  =simple_form_for @haiku do |f|
-    .hide
-      =f.input :description, as: :text, label: "Give me a haiku.", placeholder: "I keep your format, use enter for new lines please, it will look pretty", input_html: {rows: 3}
-      =f.input :author, as: :hidden, label: "Who do the haiku?"
-    =f.submit "Submit magic haiku", class: "btn btn-primary center"

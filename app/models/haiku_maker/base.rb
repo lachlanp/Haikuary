@@ -45,10 +45,7 @@ module HaikuMaker
     end
 
     def random_haikus
-      @random_haikus ||= begin
-        scope.where(id: random_ids)
-             .limit(10)
-      end
+      scope.where(id: random_ids).limit(10)
     end
 
     def random_haiku

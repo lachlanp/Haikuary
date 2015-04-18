@@ -1,0 +1,5 @@
+<%= simple_form_for :haiku do |f| %>
+  <%= f.input :description, as: :text, input_html: { rows: 3 }, autofocus: true %>
+  <%= f.input :author %>
+  <%= f.submit class: "btn btn-primary center" %>
+<% end %>

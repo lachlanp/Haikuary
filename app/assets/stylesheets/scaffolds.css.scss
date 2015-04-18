@@ -1,26 +1,20 @@
 @import "bootstrap";
 
 * {
-  box-sizing:border-box;
-}
-
-@mixin border-radius($size) {
-  -moz-border-radius: $size;
-  -webkit-border-radius: $size;
-  border-radius: $size;
+  box-sizing: border-box;
 }
 
 .page_title {
-  display:block;
+  display: block;
   text-align: center;
   font-size: 2.3em;
-  font-weight:500;
+  font-weight: 500;
   line-height: 35px;
-  margin-top:5px;
+  margin-top: 5px;
   font-family: "Parisienne", cursive;
-  color:lightgrey;
+  color: lightgrey;
   &:hover, &:active {
-    color:grey;
+    color: grey;
     text-decoration: none;
   }
 }
@@ -29,92 +23,77 @@
   text-align: center;
 }
 
-.profile-block {
-  display:block;
-  margin:0 auto;
-  text-align: center;
-  min-width:300px;
-  width:90%;
-  max-width:600px;
-  border:thin grey solid;
-  padding:10px;
-  @include border-radius(5px);
+.haiku {
   background: white;
   background-image:  url("/grey_@2X.png");
   background-repeat: repeat;
-}
-
-.profile-block-haiku {
-  display:block;
-  margin:0 auto;
-  text-align: center;
-  width:200px;
-  border:thin grey solid;
-  padding:10px;
-  @include border-radius(5px);
-}
-
-
-.pretty_haiku {
-  background: white;
-  background-image:  url("/grey_@2X.png");
-  background-repeat: repeat;
-  border:thin grey solid;
-  padding:10px;
-  @include border-radius(5px);
-  display:block;
-  margin:10px auto;
-  min-width:300px;
-  width:90%;
-  max-width:600px;
+  border: thin grey solid;
+  padding: 10px;
+  border-radius: 3px;
+  display: block;
+  margin: 10px auto;
+  min-width: 300px;
+  max-width: 600px;
   text-align: center;
   box-shadow: 1px 1px 1px;
-  position:relative;
+  position: relative;
 }
 
 .haiku-left {
-  position:absolute;
-  top:5px;
-  left:10px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
 }
 .haiku-right {
-  position:absolute;
-  top:5px;
-  right:10px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+textarea, input, select {
+  border-radius: 3px;
+  border: thin lightgrey solid;
 }
 
-.form_page {
-  width:90%;
+form {
+  width: 90%;
   min-width: 300px;
   max-width: 600px;
-  margin:0 auto;
+  margin: 0 auto;
+
   textarea {
-    margin:10px auto;
-    min-width:300px;
-    width:90%;
-    max-width:600px;
-    display:block;
+    margin: 10px auto;
+    min-width: 300px;
+    width: 90%;
+    max-width: 600px;
+    display: block;
     max-width: 100%
   }
+
   label {
-    font-size:1.5em;
     text-align: center;
-    line-height:40px;
+    line-height: 2em;
+    margin: 0;
   }
+
   .center {
-    margin:0 auto;
-    display:block;
+    margin: 0 auto;
+    display: block;
   }
+
   #haiku_author {
     max-width: 100%;
-    margin:20px auto;
-    display:block;
-    padding:10px;
+    margin: 10px auto;
+    display: block;
+    padding: 10px;
+  }
+
+  abbr.required {
+    display: none;
   }
 }
 .author {
   font-style: italic;
-  font-size:.8em;
+  font-size: .8em;
 }
 
 body {
@@ -128,144 +107,76 @@ body {
   background: rgb(30,30,30);
   background-image: url("/low_contrast_linen_@2X.png");
   background-repeat: repeat;
-  border:none;
-  @include border-radius(0);
+  border: none;
+  border-radius: 0;
 }
 .navbar-inner {
-  padding:0;
+  padding: 0;
 }
 
 .navbar-top {
-  position:fixed;
-  top:0;
+  position: fixed;
+  top: 0;
   display: block;
   width: 100%;
-  clear:both;
-  z-index:1000;
+  clear: both;
+  z-index: 1000;
 }
 
 .content {
-  position:relative;
-  top:40px;
+  position: relative;
+  top: 40px;
 }
 
-.rainy {
-  position:absolute;
-  top:5px;
-  left:10px;
-  width:30%;
-}
-label {
-  color:white;
-}
-audio {
-  width:100%;
-  min-width:40px;
-  max-width:300px;
-
-}
 .error {
-  color:#b94a48;
+  color: #b94a48;
   background-color: #f2dede;
-  width:90%;
-  display:block;
-  margin:10px auto;
-  padding:10px;
-  // @include border-radius(5px);
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
 }
 
 p {
   font-size: 1em;
 }
 
-#logo, #loginbox {
-    width: 400px;
-    margin-top:50px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-}
-#logo {
-    padding: 20px 0 20px 5px;
-}
-#logo img {
-    width: 215px;
-    margin: 0 auto;
-    display: block;
-}
-#loginbox {
-  background: #ffffff;
-    box-shadow: 0 0 4px #000000;
-    border-radius: 7px;
-    overflow: hidden !important;
-    text-align: center;
-    position: relative;
-}
-#loginbox h2{
-  font-size:1.5em;
-  text-align: left;
-  margin:20px auto 0;
-  width:80%;
-}
+.pagination {
+  text-align: center;
+  padding: 0.3em;
+  cursor: default;
+  background: white;
+  margin: 0 auto;
+  width: 600px;
+  border-radius: 3px;
+  a, span, em {
+    padding: 0.2em 0.5em;
+  }
+  .disabled {
+    color: #aaaaaa;
+  }
+  .current {
+    font-style: normal;
+    font-weight: bold;
+  }
 
-#loginbox form{
-  width:100%;
-  height:100%;
-}
-#loginbox form .control-group {
-  width:80%;
-  margin:0 auto;
-}
+  a {
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    text-decoration: none;
+  }
 
-#loginbox form label {
-  text-align: left;
-  color:black;
-  font-weight: bold;
-  margin:0 auto;
-  width:206px;
-}
-#loginbox p {
-    margin-top: 20px;
-    padding: 0 20px;
-}
-
-#loginbox .form-actions {
-  padding: 14px 20px 15px;
-}
-#loginbox .form-actions .pull-left {
-  margin-top: 2px;
-}
-
-#loginbox form#loginform {
-  z-index: 200;
-}
-
-#loginbox form#recoverform {
-  z-index: 100;
-  opacity: 0;
-  display:none;
-}
-
-#loginbox form#recoverform .form-actions {
-    margin-top: 27px;
-}
-
-#loginbox form#recoverform .control-group {
-  margin: 23px 0;
-}
-
-.form-vertical, .form-actions {
-    margin-bottom: 0;
-    margin-top:5px;
-}
-#loginbox .links {
-  margin:10px auto;
-  text-align: left;
-  float:left;
-}
-
-@media (max-width: 480px){
-    #logo, #loginbox {
-        width: 80%;
-    }
+  .page_info {
+    color: #aaaaaa;
+    padding-top: 0.8em;
+  }
+  .previous_page, .next_page {
+    border-width: 1px;
+  }
+  .previous_page {
+    margin-right: 1em;
+  }
+  .next_page {
+    margin-left: 1em;
+  }
 }
