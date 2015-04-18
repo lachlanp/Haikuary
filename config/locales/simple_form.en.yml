@@ -29,3 +29,16 @@ en:
     # prompts:
     #   defaults:
     #     age: 'Select your age'
+
+    labels:
+      haiku:
+        description: "Give me a haiku"
+        author: "Who do the haiku?"
+    placeholders:
+      haiku:
+        description: "Haiku are easy, five seven five syllables, please express yourself."
+
+  helpers:
+    submit:
+      haiku:
+        create: "Submit a haiku for fun"

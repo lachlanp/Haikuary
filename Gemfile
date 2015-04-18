@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
-ruby '2.1.5'
-gem 'rails', "4.1.8"
+ruby '2.2.2'
+gem 'rails', "4.2.1"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -9,10 +9,7 @@ gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
-gem 'sass-rails', ">= 4.0.0"
-gem 'coffee-rails', ">= 4.0.0"
 gem 'bootstrap-sass'
-gem 'bootswatch-rails'
 # gem 'compass-rails'
 gem 'modernizr-rails'
 
@@ -21,8 +18,7 @@ gem 'modernizr-rails'
 
 gem 'uglifier', '>= 1.0.3'
 gem 'twitter'
-gem 'jquery-rails'
-gem 'haml-rails'
+
 gem "will_paginate"
 gem "simple_form"
 gem "google-analytics-rails"
@@ -33,6 +29,7 @@ gem "engtagger"
 gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets', branch: 'master'
 
 gem 'sidekiq'
+gem 'responders'
 
 gem 'pry-rails'
 

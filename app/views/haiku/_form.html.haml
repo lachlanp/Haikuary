@@ -1,5 +1,0 @@
-.center
-  %form.filter_form
-    = select("haiku", "author", Haiku.all.collect(&:author).sort().uniq, {prompt: 'All Authors'})
-    %br/
-    %input{:type => "submit", :value => "Filter", class: "btn btn-primary"}

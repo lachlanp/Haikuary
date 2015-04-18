@@ -1,13 +1,13 @@
 Haikuary::Application.routes.draw do
 
   get :ping, to: "application#ping"
-  resources :haiku  do
+  resources :haikus  do
     get :random, on: :collection
   end
 
   resources :searches, only: :index, path: 'search'
 
-  root to: 'haiku#index'
+  root to: 'haikus#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

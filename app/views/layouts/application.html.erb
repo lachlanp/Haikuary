@@ -1,0 +1,31 @@
+<html lang: "en">
+  <head>
+    <title><%= t("title") %></title>
+    <%= favicon_link_tag %>
+    <%= favicon_link_tag 'apple-touch-icon.png', rel: 'apple-touch-icon', type: 'image/png' %>
+    <meta property="description",  content="Haiku for fun, haiku for profit, haiku with friends">
+    <meta property="og:title",     content="#{t('title')}">
+    <meta property="og:site_name", content="#{t('title')}">
+    <meta property="og:url",       content="http://www.haikudetat.com">
+    <meta property="og:image",     content="http://www.haikudetat.com/haiku200.png">
+    <link href='http://fonts.googleapis.com/css?family=Parisienne', rel='stylesheet'>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no", name="viewport">
+
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "application", media: "all" %>
+    <%= analytics_init if Rails.env.production? %>
+  </head>
+  <body>
+    <%= render 'layouts/header' %>
+    <div class="content">
+      <div id="messages">
+        <%= render 'layouts/errors' unless flash.nil? %>
+        <%= yield %>
+      </div>
+    </div>
+    <div class="footer">
+      <%= javascript_include_tag "application" %>
+      <%= yield :footer %>
+    </div>
+  </body>
+</html>

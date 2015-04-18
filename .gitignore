@@ -34,3 +34,5 @@ capybara-*.html
 *.dump
 
 config/secrets.yml
+
+**.DS_Store
