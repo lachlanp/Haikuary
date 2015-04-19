@@ -17,8 +17,7 @@ class Tweet
   end
 
   def save_haiku
-    haiku = Haiku.where(source_id: "#{@tweet_id}").first_or_initialize
-    haiku.update_attributes(
+    Haiku.create(
       description: reformat_text(text),
       source_id: tweet_id.to_s,
       author: author
@@ -29,10 +28,6 @@ private
 
   def reformat_text(text)
     HaikuParser.new(text).text
-  end
-
-  def url
-    "https://twitter.com/#{@user}/status/#{@tweet_id}"
   end
 
   def author
